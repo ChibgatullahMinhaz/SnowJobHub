@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "title": "Browse Companies",
+      "description": "Explore our comprehensive list of top companies hiring in your field.",
+      "icon": "🏢"
+    },
+    {
+      "id": 2,
+      "title": "View Job Details",
+      "description": "Check detailed job descriptions, requirements, and salary information.",
+      "icon": "📋"
+    },
+    {
+      "id": 3,
+      "title": "Apply Directly",
+      "description": "Apply to your chosen positions directly through company websites.",
+      "icon": "📨"
+    },
+    {
+      "id": 4,
+      "title": "Track Applications",
+      "description": "Keep track of your applications and get notified about updates.",
+      "icon": "📊"
+    }
+  ]
+  

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Hero from "../Components/Hero";
 import { Helmet } from "react-helmet";
+import HowItWorks from "../Components/HowItWorks";
 
 const Home = () => {
      useEffect(()=>{
@@ -22,6 +23,7 @@ const Home = () => {
       </Helmet>
 
       <Hero></Hero>
+      <HowItWorks></HowItWorks>
     </>
   );
 };
