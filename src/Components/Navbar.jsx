@@ -26,7 +26,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-2"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow  space-y-2"
           >
             <li>
               <NavLink to={`/`}>Home</NavLink>
@@ -61,7 +61,7 @@ const Navbar = () => {
         <Logo></Logo>
       </div>
       <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal px-3">
+        <ul className="menu menu-horizontal px-3 space-x-3">
           <li>
             <NavLink to={`/`}>Home</NavLink>
           </li>
