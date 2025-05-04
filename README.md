@@ -38,6 +38,7 @@ The purpose of this project is to build a single-page job portal that:
 ## 📦 NPM Packages Used
 
 - `react-router-dom` – Routing
+- `react-snowfall` – snowfall for background snowfall 
 - `firebase` – Authentication
 - `react-toastify` – Toast Notifications
 - `framer-motion` – Page Animations
