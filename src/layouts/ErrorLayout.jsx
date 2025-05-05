@@ -6,6 +6,12 @@ import { ArrowLeft, Home } from "lucide-react";
 import AstronautAnimation from "../Components/AstronautAnimation";
 
 const ErrorLayout = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   const location = useLocation();
 
   useEffect(() => {

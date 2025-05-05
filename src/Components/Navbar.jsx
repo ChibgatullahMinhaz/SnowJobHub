@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import Logo from "./Logo";
 import { Link, NavLink } from "react-router";
+import { AuthContext } from "../Store/Context/AuthContext";
 
 const Navbar = () => {
+  const { user } = useContext(AuthContext);
+  console.log(user);
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
@@ -40,25 +43,36 @@ const Navbar = () => {
             <li>
               <NavLink to={`/Contact`}>Contact</NavLink>
             </li>
-            <div className="action flex flex-col gap-y-3">
-              <Link
-                className=" btn bg-[#1976D2] hover:bg-[#1565C0] text-white "
-                to={`/login`}
-              >
-                {" "}
-                Login
-              </Link>
-              <Link
-                className=" btn bg-[#64B5F6] hover:bg-[#42A5F5] text-white "
-                to={`/SingUp`}
-              >
-                {" "}
-                SingUp
-              </Link>
-            </div>
+
+            {!user && (
+              <div className="action flex flex-col gap-y-3">
+                <Link
+                  className=" btn bg-[#1976D2] hover:bg-[#1565C0] text-white "
+                  to={`/login`}
+                >
+                  {" "}
+                  Login
+                </Link>
+                <Link
+                  className=" btn bg-[#64B5F6] hover:bg-[#42A5F5] text-white "
+                  to={`/SingUp`}
+                >
+                  {" "}
+                  SingUp
+                </Link>
+              </div>
+            )}
           </ul>
         </div>
         <Logo></Logo>
+      </div>
+      <div className="navbar-end  lg:hidden">
+        {user && (
+          <div className="flex gap-x-1.5 items-center">
+            <img className="h-10 w-10 rounded-full" src={user?.photoURL} alt={user?.displayName} />
+            
+          </div>
+        )}
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-3 space-x-3">
@@ -75,22 +89,29 @@ const Navbar = () => {
             <NavLink to={`/Contact`}>Contact</NavLink>
           </li>
         </ul>
-        <div className="action flex gap-x-3.5">
-          <Link
-            className=" btn bg-[#1976D2] hover:bg-[#1565C0] text-white "
-            to={`/login`}
-          >
-            {" "}
-            Login
-          </Link>
-          <Link
-            className=" btn bg-[#64B5F6] hover:bg-[#42A5F5] text-white "
-            to={`/SingUp`}
-          >
-            {" "}
-            SingUp
-          </Link>
-        </div>
+        {user ?  (
+          <div className="flex gap-x-1.5 items-center">
+            <img className="h-10 w-10 rounded-full" src={user?.photoURL} alt={user?.displayName} />
+            
+          </div>
+        ): (
+          <div className="action flex gap-x-3.5">
+            <Link
+              className=" btn bg-[#1976D2] hover:bg-[#1565C0] text-white "
+              to={`/login`}
+            >
+              {" "}
+              Login
+            </Link>
+            <Link
+              className=" btn bg-[#64B5F6] hover:bg-[#42A5F5] text-white "
+              to={`/SingUp`}
+            >
+              {" "}
+              SingUp
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

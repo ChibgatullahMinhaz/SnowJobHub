@@ -1,5 +1,4 @@
-import React, { use, useEffect, useState } from "react";
-import { AuthContext, LoadingContext } from "./FirebaseAuthContext";
+import React, { use, useContext, useEffect, useState } from "react";
 import {
   createUserWithEmailAndPassword,
   GoogleAuthProvider,
@@ -9,15 +8,18 @@ import {
   signInWithPopup,
   signOut,
 } from "firebase/auth";
-import { auth } from "../firebase/firebase.init";
 import { toast } from "react-toastify";
+import { LoaderContext } from "../Context/LocaderContext";
+import { AuthContext } from "../Context/AuthContext";
+import { auth } from "../../Utilities/firebase.init";
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const { setLoading,loading } = use(LoadingContext);
+  const { isLoading,setIsLoading } = useContext(LoaderContext);
+  console.log(setIsLoading);
 
   const createUser = (email, password) => {
-    setLoading(true);
+    setIsLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
   
@@ -26,14 +28,12 @@ const AuthProvider = ({ children }) => {
   };
 
   const creteUserWithGoogle = (provider) => {
-    setLoading(true);
+    setIsLoading(true);
     return signInWithPopup(auth, provider);
   };
-  const createUserWithGithub = (provider) => {
-    toast.warning("Coming soon!");
-  };
+ 
   const sendVerificationEmail = (currentUser) => {
-    setLoading(true);
+    setIsLoading(true);
     return sendEmailVerification(currentUser);
   };
   const logout = ()=> {
@@ -42,22 +42,21 @@ const AuthProvider = ({ children }) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
-      setLoading(false);
+      setIsLoading(false);
      return ()=> unsubscribe();
 
     });
-  }, [setLoading]);
+  }, [setIsLoading]);
 
   const userInfo = {
     user,
     logout,
     createUser,
-    createUserWithGithub,
-    setLoading,
+    setIsLoading,
     creteUserWithGoogle,
     sendVerificationEmail,
     userLogin,
-    loading
+    isLoading
   };
   return (
     <AuthContext.Provider value={userInfo}>{children}</AuthContext.Provider>

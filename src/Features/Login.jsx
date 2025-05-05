@@ -1,10 +1,11 @@
 import React, { useContext, useRef } from "react";
-import { AuthContext } from "../../Context/FirebaseAuthContext";
 import { Link, useLocation, useNavigate } from "react-router";
 import { GithubAuthProvider, GoogleAuthProvider, sendPasswordResetEmail, signOut } from "firebase/auth";
 import { toast } from "react-toastify";
-import { auth } from "../../firebase/firebase.init";
-
+import { AuthContext } from "../Store/Context/AuthContext";
+import { motion } from 'framer-motion';
+import { Helmet } from "react-helmet";
+import { auth } from "../Utilities/firebase.init";
 const Login = () => {
   const emailRef = useRef();
   const { creteUserWithGoogle, createUserWithGithub, userLogin, user } =
@@ -20,14 +21,6 @@ const Login = () => {
 
     userLogin(email, password)
       .then((result) => {
-        const verifyEmail = result.user.emailVerified;
-        if (result.user) {
-          if (!verifyEmail) {
-            toast.warn("Please verify Your email!");
-            signOut(auth);
-            return;
-          }
-        }
 
         toast.success("login successful");
         navigate( location?.state ||"/");
@@ -79,8 +72,22 @@ const Login = () => {
       });
   };
   return (
+
+    <>
+      <Helmet>
+        <title>Login - SnowJobHub</title>
+        <meta
+          name="description"
+          content="Login your SnowJobHub account to explore job opportunities"
+        />
+      </Helmet>
     <div className="card bg-base-100 w-full max-w-sm mx-auto shrink-0 shadow-2xl mt-10">
-      <div className="card-body">
+      <motion.div 
+      
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="card-body">
         <form className="fieldset" onSubmit={handleSingIn}>
           <label className="label">Email</label>
           <input
@@ -192,8 +199,9 @@ const Login = () => {
           </svg>
           Login with Facebook
         </button>
-      </div>
+      </motion.div>
     </div>
+    </>
   );
 };
 

@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router";
-import { AuthContext } from "../../Context/FirebaseAuthContext";
 import { toast } from "react-toastify";
 import { updateProfile } from "firebase/auth";
 import { motion } from 'framer-motion';
 import { Helmet } from "react-helmet";
+import { AuthContext } from "../Store/Context/AuthContext";
 
 const SingUp = () => {
   const { createUser, sendVerificationEmail } = useContext(AuthContext);
@@ -151,8 +151,8 @@ const SingUp = () => {
                 name="password"
                 placeholder="Password"
                 minlength="8"
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                title="Must be more than 8 characters, including number, lowercase letter, uppercase letter"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                title="Must be more than 6 characters, including number, lowercase letter, uppercase letter"
               />
             </label>
             <p className="validator-hint hidden">

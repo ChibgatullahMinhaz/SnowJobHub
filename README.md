@@ -1,18 +1,20 @@
-# JobTrack
+# SnowJobHub
 
-**JobTrack** is a modern job platform web application that helps users explore jobs from various companies, apply online, and manage their profiles securely.
+
+**SnowJobHub** is a modern job platform web application that helps users explore jobs from various companies, apply online, and manage their profiles securely.
 
 ---
 
 ## 🌐 Live URL
 
-[🔗 Visit JobTrack Live](https://snowjobhub.web.app/)
+[🔗 Visit SnowJobHub Live](https://snowjobhub.web.app/)
 
 ---
 
 ## 🎯 Purpose
 
 The purpose of this project is to build a single-page job portal that:
+
 - Helps users browse and filter job listings.
 - Lets users apply to jobs with clear requirements.
 - Provides secure authentication and user profile management.
@@ -38,7 +40,7 @@ The purpose of this project is to build a single-page job portal that:
 ## 📦 NPM Packages Used
 
 - `react-router-dom` – Routing
-- `react-snowfall` – snowfall for background snowfall 
+- `react-snowfall` – snowfall for background snowfall
 - `firebase` – Authentication
 - `react-toastify` – Toast Notifications
 - `framer-motion` – Page Animations

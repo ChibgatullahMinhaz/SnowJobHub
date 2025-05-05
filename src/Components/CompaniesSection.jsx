@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom"; // Link কম্পোনেন্টের মাধ্যমে রাউটিং হবে
+import { LoaderContext } from "../Store/Context/LocaderContext";
 
 const container = {
   hidden: {},
@@ -17,8 +18,8 @@ const item = {
 };
 
 const CompaniesSection = () => {
+  const {setIsLoading, isLoading} = useContext(LoaderContext);
   const [companies, setCompanies] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -34,15 +35,15 @@ const CompaniesSection = () => {
         setError(error.message);
         console.error("Error loading companies:", error);
       } finally {
-        setLoading(false);
+        setIsLoading(false);
       }
     };
 
     fetchData();
-  }, []);
+  }, [setIsLoading]);
 
-  if (loading) {
-    return <div>Loading...</div>;
+  if (isLoading) {
+    return <span className="loading loading-spinner text-primary"></span>;
   }
 
   if (error) {
