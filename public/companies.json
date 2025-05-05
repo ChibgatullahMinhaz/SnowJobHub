@@ -1,8 +1,51 @@
 [
-    { "id": 1, "name": "Company A", "logo": "logo_a.png", "detailsPage": "/company-a" },
-    { "id": 2, "name": "Company B", "logo": "logo_b.png", "detailsPage": "/company-b" },
-    { "id": 3, "name": "Company C", "logo": "logo_c.png", "detailsPage": "/company-c" },
-    { "id": 4, "name": "Company D", "logo": "logo_d.png", "detailsPage": "/company-d" },
-    { "id": 5, "name": "Company E", "logo": "logo_e.png", "detailsPage": "/company-e" },
-    { "id": 6, "name": "Company F", "logo": "logo_f.png", "detailsPage": "/company-f" }
+    {
+      "id": 1,
+      "name": "Google",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+      "detailsPage": "/companies/google"
+    },
+    {
+      "id": 2,
+      "name": "Microsoft",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+      "detailsPage": "/companies/microsoft"
+    },
+    {
+      "id": 3,
+      "name": "Apple",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+      "detailsPage": "/companies/apple"
+    },
+    {
+      "id": 4,
+      "name": "Amazon",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+      "detailsPage": "/companies/amazon"
+    },
+    {
+      "id": 5,
+      "name": "Facebook",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
+      "detailsPage": "/companies/facebook"
+    },
+    {
+      "id": 6,
+      "name": "Netflix",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+      "detailsPage": "/companies/netflix"
+    },
+    {
+      "id": 7,
+      "name": "Tesla",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Tesla_Motors.svg",
+      "detailsPage": "/companies/tesla"
+    },
+    {
+      "id": 8,
+      "name": "Adobe",
+      "logo": "https://blog.logomaster.ai/hs-fs/hubfs/adobe-logo-1.jpg?width=662&height=441&name=adobe-logo-1.jpg",
+      "detailsPage": "/companies/adobe"
+    }
   ]
+  

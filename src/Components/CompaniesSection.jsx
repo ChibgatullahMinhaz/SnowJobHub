@@ -85,7 +85,7 @@ const CompaniesSection = () => {
               <Link to={company.detailsPage}>
                 <div className="w-24 h-24 mb-4 flex items-center justify-center bg-gray-200 rounded-full">
                   <img
-                    src={`/images/${company.logo}`}
+                    src={`${company.logo}`}
                     alt={company.name}
                     className="w-full h-full object-contain"
                   />
