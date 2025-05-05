@@ -2,15 +2,16 @@
     {
         "id": "1",
         "name": "Google",
-        "logo": "https://example.com/logo/google.png",
+        "logo": "../src/assets/logo/Google.svg.png",
         "location": "Mountain View, CA",
-        "website": "https://google.com",
+        "website": "https://about.google/",
         "industry": "Technology",
+        "description": "Google's mission is to organize the world's information and make it universally accessible and useful.",
         "jobs": [
             {
                 "id": "job-001",
                 "title": "Software Engineer",
-                "bannerImage": "https://example.com/banner/1.png",
+                "bannerImage": "https://careers.google.com/static/hero/hero-global.jpg",
                 "location": "Mountain View, CA",
                 "salary": "$120,000 - $150,000",
                 "jobType": "Full-time",
@@ -20,21 +21,50 @@
                     "Strong knowledge of algorithms",
                     "Excellent problem-solving skills"
                 ]
+            },
+            {
+                "id": "job-021",
+                "title": "Research Scientist",
+                "bannerImage": "https://careers.google.com/static/hero/hero-global.jpg",
+                "location": "Mountain View, CA",
+                "salary": "$140,000 - $180,000",
+                "jobType": "Full-time",
+                "description": "Conduct research in areas such as AI, machine learning, and natural language processing.",
+                "requirements": [
+                    "PhD in Computer Science or related field",
+                    "Strong publication record",
+                    "Experience with deep learning frameworks"
+                ]
+            },
+            {
+                "id": "job-022",
+                "title": "Technical Program Manager",
+                "bannerImage": "https://careers.google.com/static/hero/hero-global.jpg",
+                "location": "Sunnyvale, CA",
+                "salary": "$130,000 - $160,000",
+                "jobType": "Full-time",
+                "description": "Lead complex technical projects, ensuring timely delivery and high quality.",
+                "requirements": [
+                    "5+ years of technical project management experience",
+                    "Strong communication and organizational skills",
+                    "Experience with software development lifecycle"
+                ]
             }
         ]
     },
     {
         "id": "2",
         "name": "Microsoft",
-        "logo": "https://example.com/logo/microsoft.png",
+        "logo": "/src/assets/logo/microsft.png",
         "location": "Redmond, WA",
-        "website": "https://microsoft.com",
+        "website": "https://www.microsoft.com/en-us/",
         "industry": "Technology",
+        "description": "Microsoft's mission is to empower every person and every organization on the planet to achieve more.",
         "jobs": [
             {
                 "id": "job-002",
                 "title": "Product Manager",
-                "bannerImage": "https://example.com/banner/2.png",
+                "bannerImage": "https://careers.microsoft.com/static/89e3976099293519827150861491097c/img/hero.jpg",
                 "location": "Redmond, WA",
                 "salary": "$100,000 - $130,000",
                 "jobType": "Full-time",
@@ -44,21 +74,50 @@
                     "Strong leadership and communication skills",
                     "Experience with Agile methodologies"
                 ]
+            },
+            {
+                "id": "job-023",
+                "title": "Security Engineer",
+                "bannerImage": "https://careers.microsoft.com/static/89e3976099293519827150861491097c/img/hero.jpg",
+                "location": "Bellevue, WA",
+                "salary": "$110,000 - $140,000",
+                "jobType": "Full-time",
+                "description": "Develop and implement security measures to protect Microsoft's systems and data.",
+                "requirements": [
+                    "Experience with security frameworks and technologies",
+                    "Strong understanding of network security",
+                    "Excellent analytical and problem-solving skills"
+                ]
+            },
+            {
+                "id": "job-024",
+                "title": "Data Analyst",
+                "bannerImage": "https://careers.microsoft.com/static/89e3976099293519827150861491097c/img/hero.jpg",
+                "location": "Redmond, WA",
+                "salary": "$80,000 - $100,000",
+                "jobType": "Full-time",
+                "description": "Analyze large datasets to provide insights and support business decisions.",
+                "requirements": [
+                    "Proficiency in SQL and data analysis tools",
+                    "Strong statistical knowledge",
+                    "Experience with data visualization"
+                ]
             }
         ]
     },
     {
         "id": "3",
         "name": "Amazon",
-        "logo": "https://example.com/logo/amazon.png",
+        "logo": "/src/assets/logo/amazon.jpg",
         "location": "Seattle, WA",
-        "website": "https://amazon.com",
+        "website": "https://www.aboutamazon.com/",
         "industry": "E-commerce",
+        "description": "Amazon is guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking.",
         "jobs": [
             {
                 "id": "job-003",
                 "title": "UX Designer",
-                "bannerImage": "https://example.com/banner/3.png",
+                "bannerImage": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/wethinkbig/hero/v2/WETB_hero_UX_design_desktop_2x._CB635488941_.jpg",
                 "location": "Seattle, WA",
                 "salary": "$90,000 - $120,000",
                 "jobType": "Full-time",
@@ -68,21 +127,50 @@
                     "Experience in e-commerce and mobile apps",
                     "Strong portfolio showcasing design skills"
                 ]
+            },
+            {
+                "id": "job-025",
+                "title": "Supply Chain Analyst",
+                "bannerImage": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/wethinkbig/hero/v2/WETB_hero_supply_chain_desktop_2x._CB635488941_.jpg",
+                "location": "Seattle, WA",
+                "salary": "$75,000 - $95,000",
+                "jobType": "Full-time",
+                "description": "Analyze and optimize Amazon's global supply chain operations.",
+                "requirements": [
+                    "Bachelor's degree in Supply Chain Management or related field",
+                    "Strong analytical and problem-solving skills",
+                    "Experience with supply chain software"
+                ]
+            },
+            {
+                "id": "job-026",
+                "title": "Business Analyst",
+                "bannerImage": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/wethinkbig/hero/v2/WETB_hero_business_analyst_desktop_2x._CB635488941_.jpg",
+                "location": "Austin, TX",
+                "salary": "$85,000 - $110,000",
+                "jobType": "Full-time",
+                "description": "Analyze business needs and provide data-driven recommendations for process improvement.",
+                "requirements": [
+                    "Bachelor's degree in Business Administration or related field",
+                    "Experience with data analysis and reporting",
+                    "Strong communication and stakeholder management skills"
+                ]
             }
         ]
     },
     {
         "id": "4",
-        "name": "Facebook",
-        "logo": "https://example.com/logo/facebook.png",
+        "name": "Meta",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/800px-2021_Facebook_icon.svg.png",
         "location": "Menlo Park, CA",
-        "website": "https://facebook.com",
+        "website": "https://about.facebook.com/",
         "industry": "Technology",
+        "description": "Meta builds technologies that help people connect and share, build communities, and grow businesses.",
         "jobs": [
             {
                 "id": "job-004",
                 "title": "Data Scientist",
-                "bannerImage": "https://example.com/banner/4.png",
+                "bannerImage": "https://www.metacareers.com/static/images/careers/social/og_image.png",
                 "location": "Menlo Park, CA",
                 "salary": "$110,000 - $140,000",
                 "jobType": "Full-time",
@@ -92,21 +180,50 @@
                     "Strong knowledge of machine learning models",
                     "Bachelor's degree in Computer Science or related field"
                 ]
+            },
+            {
+                "id": "job-027",
+                "title": "AI Engineer",
+                "bannerImage": "https://www.metacareers.com/static/images/careers/social/og_image.png",
+                "location": "Menlo Park, CA",
+                "salary": "$135,000 - $170,000",
+                "jobType": "Full-time",
+                "description": "Develop and deploy AI solutions to enhance user experience and platform capabilities.",
+                "requirements": [
+                    "Master's or PhD in Computer Science with AI focus",
+                    "Strong experience with deep learning frameworks (TensorFlow, PyTorch)",
+                    "Proven track record in developing AI applications"
+                ]
+            },
+            {
+                "id": "job-028",
+                "title": "Social Media Manager",
+                "bannerImage": "https://www.metacareers.com/static/images/careers/social/og_image.png",
+                "location": "New York, NY",
+                "salary": "$70,000 - $90,000",
+                "jobType": "Full-time",
+                "description": "Manage Facebook's social media presence and engage with online communities.",
+                "requirements": [
+                    "Proven experience in social media marketing",
+                    "Excellent written and verbal communication skills",
+                    "Knowledge of social media analytics tools"
+                ]
             }
         ]
     },
     {
         "id": "5",
         "name": "Netflix",
-        "logo": "https://example.com/logo/netflix.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg",
         "location": "Los Gatos, CA",
-        "website": "https://netflix.com",
+        "website": "https://about.netflix.com/",
         "industry": "Entertainment",
+        "description": "Netflix is the world's leading streaming entertainment service with over 270 million paid memberships in over 190 countries enjoying TV series, films and games across a wide variety of genres and languages.",
         "jobs": [
             {
                 "id": "job-005",
                 "title": "Software Developer",
-                "bannerImage": "https://example.com/banner/5.png",
+                "bannerImage": "https://jobs.netflix.com/assets/img/homepage/hero-b.jpg",
                 "location": "Los Gatos, CA",
                 "salary": "$120,000 - $150,000",
                 "jobType": "Full-time",
@@ -116,21 +233,50 @@
                     "Familiarity with cloud computing platforms (AWS, Azure)",
                     "Excellent debugging and troubleshooting skills"
                 ]
+            },
+            {
+                "id": "job-029",
+                "title": "Content Analyst",
+                "bannerImage": "https://jobs.netflix.com/assets/img/homepage/hero-b.jpg",
+                "location": "Los Angeles, CA",
+                "salary": "$75,000 - $95,000",
+                "jobType": "Full-time",
+                "description": "Analyze content performance data to inform content strategy and acquisition.",
+                "requirements": [
+                    "Bachelor's degree in Film Studies, Statistics, or related field",
+                    "Strong analytical skills and experience with data analysis tools",
+                    "Passion for film and television"
+                ]
+            },
+            {
+                "id": "job-030",
+                "title": "UI Engineer",
+                "bannerImage": "https://jobs.netflix.com/assets/img/homepage/hero-b.jpg",
+                "location": "Los Gatos, CA",
+                "salary": "$110,000 - $140,000",
+                "jobType": "Full-time",
+                "description": "Build and maintain user interfaces for Netflix applications across various devices.",
+                "requirements": [
+                    "Proficiency in JavaScript, HTML, and CSS",
+                    "Experience with modern JavaScript frameworks (React, Angular, Vue.js)",
+                    "Strong understanding of UI/UX principles"
+                ]
             }
         ]
     },
     {
         "id": "6",
         "name": "Adobe",
-        "logo": "https://example.com/logo/adobe.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Adobe_logo_2021.svg/800px-Adobe_logo_2021.svg.png",
         "location": "San Jose, CA",
-        "website": "https://adobe.com",
+        "website": "https://www.adobe.com/",
         "industry": "Software Development",
+        "description": "Adobe is changing the world through digital experiences. Our creative, marketing and document solutions empower everyone — from emerging artists to global brands — to bring digital creations to life and deliver them to the right person at the right moment for the best results.",
         "jobs": [
             {
                 "id": "job-006",
                 "title": "Front-end Developer",
-                "bannerImage": "https://example.com/banner/6.png",
+                "bannerImage": "https://www.adobe.com/content/dam/web/en/careers/creativecloud-hero-2000x667.jpg",
                 "location": "San Jose, CA",
                 "salary": "$100,000 - $130,000",
                 "jobType": "Full-time",
@@ -140,21 +286,50 @@
                     "Experience with React or Angular",
                     "Passion for user experience and design"
                 ]
+            },
+            {
+                "id": "job-031",
+                "title": "Creative Cloud Specialist",
+                "bannerImage": "https://www.adobe.com/content/dam/web/en/careers/creativecloud-hero-2000x667.jpg",
+                "location": "San Francisco, CA",
+                "salary": "$80,000 - $100,000",
+                "jobType": "Full-time",
+                "description": "Provide technical support and training for Adobe Creative Cloud products.",
+                "requirements": [
+                    "Strong knowledge of Adobe Creative Suite (Photoshop, Illustrator, Premiere Pro)",
+                    "Excellent communication and presentation skills",
+                    "Experience in customer support or training"
+                ]
+            },
+            {
+                "id": "job-032",
+                "title": "Back-end Engineer",
+                "bannerImage": "https://www.adobe.com/content/dam/web/en/careers/creativecloud-hero-2000x667.jpg",
+                "location": "San Jose, CA",
+                "salary": "$115,000 - $145,000",
+                "jobType": "Full-time",
+                "description": "Develop and maintain server-side logic and databases for Adobe applications.",
+                "requirements": [
+                    "Experience with languages like Java, Python, or Node.js",
+                    "Strong knowledge of database systems (SQL, NoSQL)",
+                    "Familiarity with RESTful APIs"
+                ]
             }
         ]
     },
     {
         "id": "7",
         "name": "Salesforce",
-        "logo": "https://example.com/logo/salesforce.png",
+        "logo": "https://www.salesforce.com/content/dam/web/en_us/www/images/logo/salesforce-logo.svg",
         "location": "San Francisco, CA",
-        "website": "https://salesforce.com",
+        "website": "https://www.salesforce.com/",
         "industry": "Cloud Computing",
+        "description": "Salesforce is the leading cloud-based software company providing customer relationship management (CRM) service.",
         "jobs": [
             {
                 "id": "job-007",
                 "title": "Cloud Engineer",
-                "bannerImage": "https://example.com/banner/7.png",
+                "bannerImage": "https://www.salesforce.com/content/dam/web/en_us/www/images/careers/hero/careers-hero-cloud-engineer.jpg",
                 "location": "San Francisco, CA",
                 "salary": "$115,000 - $145,000",
                 "jobType": "Full-time",
@@ -164,21 +339,50 @@
                     "Strong knowledge of cloud architecture",
                     "Experience with Kubernetes and Docker"
                 ]
+            },
+            {
+                "id": "job-033",
+                "title": "Salesforce Developer",
+                "bannerImage": "https://www.salesforce.com/content/dam/web/en_us/www/images/careers/hero/careers-hero-salesforce-developer.jpg",
+                "location": "San Francisco, CA",
+                "salary": "$100,000 - $130,000",
+                "jobType": "Full-time",
+                "description": "Develop custom solutions on the Salesforce platform using Apex and Lightning.",
+                "requirements": [
+                    "Experience with Apex, Visualforce, and Lightning Web Components",
+                    "Salesforce certifications preferred",
+                    "Strong understanding of Salesforce data model"
+                ]
+            },
+            {
+                "id": "job-034",
+                "title": "Technical Architect",
+                "bannerImage": "https://www.salesforce.com/content/dam/web/en_us/www/images/careers/hero/careers-hero-technical-architect.jpg",
+                "location": "San Francisco, CA",
+                "salary": "$150,000 - $190,000",
+                "jobType": "Full-time",
+                "description": "Design and lead the implementation of complex Salesforce solutions for enterprise clients.",
+                "requirements": [
+                    "Extensive experience with Salesforce architecture and design",
+                    "Strong leadership and client management skills",
+                    "Multiple Salesforce certifications"
+                ]
             }
         ]
     },
     {
         "id": "8",
         "name": "IBM",
-        "logo": "https://example.com/logo/ibm.png",
+        "logo": "https://www.ibm.com/design/language/v1.0/images/ibm-logo.svg",
         "location": "Armonk, NY",
-        "website": "https://ibm.com",
+        "website": "https://www.ibm.com/",
         "industry": "Technology",
+        "description": "IBM is a global technology company that provides enterprise software, hardware, and consulting services.",
         "jobs": [
             {
                 "id": "job-008",
                 "title": "DevOps Engineer",
-                "bannerImage": "https://example.com/banner/8.png",
+                "bannerImage": "https://www.ibm.com/careers/static/89e3976099293519827150861491097c/img/hero.jpg",
                 "location": "Armonk, NY",
                 "salary": "$110,000 - $140,000",
                 "jobType": "Full-time",
@@ -188,21 +392,50 @@
                     "Knowledge of container orchestration (Kubernetes)",
                     "Familiarity with scripting languages (Bash, Python)"
                 ]
+            },
+            {
+                "id": "job-035",
+                "title": "Data Scientist",
+                "bannerImage": "https://www.ibm.com/careers/static/89e3976099293519827150861491097c/img/hero.jpg",
+                "location": "Cambridge, MA",
+                "salary": "$120,000 - $150,000",
+                "jobType": "Full-time",
+                "description": "Apply statistical and machine learning techniques to analyze and interpret complex datasets.",
+                "requirements": [
+                    "Master's or PhD in Data Science, Statistics, or related field",
+                    "Strong programming skills in Python or R",
+                    "Experience with machine learning algorithms"
+                ]
+            },
+            {
+                "id": "job-036",
+                "title": "Cybersecurity Analyst",
+                "bannerImage": "https://www.ibm.com/careers/static/89e3976099293519827150861491097c/img/hero.jpg",
+                "location": "Raleigh, NC",
+                "salary": "$90,000 - $120,000",
+                "jobType": "Full-time",
+                "description": "Monitor and analyze security events to detect and respond to cyber threats.",
+                "requirements": [
+                    "Experience with security information and event management (SIEM) systems",
+                    "Knowledge of network security protocols",
+                    "Security certifications (e.g., CompTIA Security+)"
+                ]
             }
         ]
     },
     {
         "id": "9",
         "name": "Apple",
-        "logo": "https://example.com/logo/apple.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
         "location": "Cupertino, CA",
-        "website": "https://apple.com",
+        "website": "https://www.apple.com/",
         "industry": "Consumer Electronics",
+        "description": "Apple designs, develops, and sells consumer electronics, computer software, and online services.",
         "jobs": [
             {
                 "id": "job-009",
                 "title": "Mobile Developer",
-                "bannerImage": "https://example.com/banner/9.png",
+                "bannerImage": "https://jobs.apple.com/content/dam/jobs/us/en-us/homepage/hero/desktop/hero-desktop.jpg",
                 "location": "Cupertino, CA",
                 "salary": "$130,000 - $160,000",
                 "jobType": "Full-time",
@@ -212,21 +445,50 @@
                     "Experience with iOS frameworks and APIs",
                     "Strong knowledge of mobile UI/UX design principles"
                 ]
+            },
+            {
+                "id": "job-037",
+                "title": "Hardware Engineer",
+                "bannerImage": "https://jobs.apple.com/content/dam/jobs/us/en-us/homepage/hero/desktop/hero-desktop.jpg",
+                "location": "Cupertino, CA",
+                "salary": "$140,000 - $170,000",
+                "jobType": "Full-time",
+                "description": "Design and test hardware components for Apple products.",
+                "requirements": [
+                    "Bachelor's or Master's degree in Electrical Engineering or related field",
+                    "Experience with circuit design and testing",
+                    "Knowledge of semiconductor technologies"
+                ]
+            },
+            {
+                "id": "job-038",
+                "title": "UI/UX Designer",
+                "bannerImage": "https://jobs.apple.com/content/dam/jobs/us/en-us/homepage/hero/desktop/hero-desktop.jpg",
+                "location": "Sunnyvale, CA",
+                "salary": "$110,000 - $140,000",
+                "jobType": "Full-time",
+                "description": "Design intuitive and visually appealing user interfaces for Apple's software and hardware products.",
+                "requirements": [
+                    "Strong portfolio showcasing UI/UX design skills",
+                    "Proficiency in design and prototyping tools (Sketch, Figma)",
+                    "Understanding of human-centered design principles"
+                ]
             }
         ]
     },
     {
         "id": "10",
         "name": "Spotify",
-        "logo": "https://example.com/logo/spotify.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg",
         "location": "Stockholm, Sweden",
-        "website": "https://spotify.com",
+        "website": "https://www.spotify.com/",
         "industry": "Entertainment",
+        "description": "Spotify is a digital music, podcast, and video service that gives you access to millions of songs and other content from creators all over the world.",
         "jobs": [
             {
                 "id": "job-010",
                 "title": "Backend Developer",
-                "bannerImage": "https://example.com/banner/10.png",
+                "bannerImage": "https://content.scdn.co/i/_global/open-graph-default.png",
                 "location": "Stockholm, Sweden",
                 "salary": "$110,000 - $140,000",
                 "jobType": "Full-time",
@@ -236,29 +498,86 @@
                     "Knowledge of distributed systems",
                     "Experience with cloud platforms (AWS, GCP)"
                 ]
+            },
+            {
+                "id": "job-039",
+                "title": "Data Engineer",
+                "bannerImage": "https://content.scdn.co/i/_global/open-graph-default.png",
+                "location": "Stockholm, Sweden",
+                "salary": "$120,000 - $150,000",
+                "jobType": "Full-time",
+                "description": "Design and build scalable data pipelines to support Spotify's analytics and machine learning efforts.",
+                "requirements": [
+                    "Experience with big data technologies (Spark, Kafka)",
+                    "Proficiency in SQL and Python",
+                    "Experience with ETL processes"
+                ]
+            },
+            {
+                "id": "job-040",
+                "title": "Product Manager",
+                "bannerImage": "https://content.scdn.co/i/_global/open-graph-default.png",
+                "location": "London, UK",
+                "salary": "$95,000 - $125,000",
+                "jobType": "Full-time",
+                "description": "Define and drive the product strategy and roadmap for key features within the Spotify ecosystem.",
+                "requirements": [
+                    "3+ years of product management experience in a tech company",
+                    "Strong understanding of user needs and market trends",
+                    "Excellent communication and stakeholder management skills"
+                ]
             }
         ]
     },
     {
         "id": "11",
-        "name": "Twitter",
-        "logo": "https://example.com/logo/twitter.png",
+        "name": "X",
+        "logo": "https://abs.twimg.com/favicons/favicon.ico",
         "location": "San Francisco, CA",
-        "website": "https://twitter.com",
+        "website": "https://x.com/",
         "industry": "Social Media",
+        "description": "X is a social media platform where users post and interact with messages known as \"tweets\".",
         "jobs": [
             {
                 "id": "job-011",
                 "title": "Full-stack Developer",
-                "bannerImage": "https://example.com/banner/11.png",
+                "bannerImage": "https://pbs.twimg.com/semantic_core_img/1687735804974934017/y7966eGh?format=jpg&name=4096x4096",
                 "location": "San Francisco, CA",
                 "salary": "$130,000 - $160,000",
                 "jobType": "Full-time",
-                "description": "Develop features for Twitter’s platform and services.",
+                "description": "Develop features for X’s platform and services.",
                 "requirements": [
                     "Proficiency in JavaScript and Node.js",
                     "Experience with React and Express.js",
                     "Familiarity with cloud platforms like AWS"
+                ]
+            },
+            {
+                "id": "job-041",
+                "title": "Machine Learning Engineer",
+                "bannerImage": "https://pbs.twimg.com/semantic_core_img/1687735804974934017/y7966eGh?format=jpg&name=4096x4096",
+                "location": "Boulder, CO",
+                "salary": "$140,000 - $175,000",
+                "jobType": "Full-time",
+                "description": "Build and deploy machine learning models to improve user experience and content recommendation.",
+                "requirements": [
+                    "Strong experience with Python and ML libraries (TensorFlow, PyTorch)",
+                    "Knowledge of deep learning techniques",
+                    "Experience with large-scale data processing"
+                ]
+            },
+            {
+                "id": "job-042",
+                "title": "Site Reliability Engineer",
+                "bannerImage": "https://pbs.twimg.com/semantic_core_img/1687735804974934017/y7966eGh?format=jpg&name=4096x4096",
+                "location": "New York, NY",
+                "salary": "$125,000 - $155,000",
+                "jobType": "Full-time",
+                "description": "Ensure the reliability, scalability, and performance of X's infrastructure.",
+                "requirements": [
+                    "Experience with cloud platforms (AWS, GCP)",
+                    "Proficiency in automation tools (Ansible, Terraform)",
+                    "Strong troubleshooting and problem-solving skills"
                 ]
             }
         ]
@@ -266,15 +585,16 @@
     {
         "id": "12",
         "name": "Dropbox",
-        "logo": "https://example.com/logo/dropbox.png",
+        "logo": "https://cfl.dropboxstatic.com/static/images/favicon/favicon-dropbox.ico",
         "location": "San Francisco, CA",
-        "website": "https://dropbox.com",
+        "website": "https://www.dropbox.com/",
         "industry": "Cloud Storage",
+        "description": "Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, United States that offers cloud storage, file synchronization, personal cloud, and client software.",
         "jobs": [
             {
                 "id": "job-012",
                 "title": "Cloud Solutions Architect",
-                "bannerImage": "https://example.com/banner/12.png",
+                "bannerImage": "https://blog.dropbox.com/static/images/dropbox-logo-2021.png",
                 "location": "San Francisco, CA",
                 "salary": "$140,000 - $170,000",
                 "jobType": "Full-time",
@@ -284,21 +604,50 @@
                     "Strong knowledge of cloud infrastructure",
                     "Expertise in security protocols"
                 ]
+            },
+            {
+                "id": "job-043",
+                "title": "Backend Engineer",
+                "bannerImage": "https://blog.dropbox.com/static/images/dropbox-logo-2021.png",
+                "location": "Seattle, WA",
+                "salary": "$120,000 - $150,000",
+                "jobType": "Full-time",
+                "description": "Develop and maintain the backend systems that power Dropbox's file storage and sharing features.",
+                "requirements": [
+                    "Experience with Python, Go, or Java",
+                    "Strong knowledge of distributed systems and databases",
+                    "Experience with building scalable and reliable services"
+                ]
+            },
+            {
+                "id": "job-044",
+                "title": "Security Engineer",
+                "bannerImage": "https://blog.dropbox.com/static/images/dropbox-logo-2021.png",
+                "location": "Austin, TX",
+                "salary": "$115,000 - $145,000",
+                "jobType": "Full-time",
+                "description": "Implement and maintain security measures to protect Dropbox's infrastructure and user data.",
+                "requirements": [
+                    "Experience with security tools and technologies",
+                    "Knowledge of security best practices and compliance standards",
+                    "Strong understanding of network and application security"
+                ]
             }
         ]
     },
     {
         "id": "13",
         "name": "Pinterest",
-        "logo": "https://example.com/logo/pinterest.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Pinterest_logo_2023.svg",
         "location": "San Francisco, CA",
-        "website": "https://pinterest.com",
+        "website": "https://www.pinterest.com/",
         "industry": "Social Media",
+        "description": "Pinterest is a visual discovery engine for finding ideas like recipes, home and style inspiration, and more.",
         "jobs": [
             {
                 "id": "job-013",
                 "title": "Data Engineer",
-                "bannerImage": "https://example.com/banner/13.png",
+                "bannerImage": "https://about.pinterest.com/assets/img/life/hero.jpg",
                 "location": "San Francisco, CA",
                 "salary": "$120,000 - $150,000",
                 "jobType": "Full-time",
@@ -308,21 +657,50 @@
                     "Proficiency in Python and SQL",
                     "Experience with data pipelines and ETL tools"
                 ]
+            },
+            {
+                "id": "job-045",
+                "title": "Software Engineer (Backend)",
+                "bannerImage": "https://about.pinterest.com/assets/img/life/hero.jpg",
+                "location": "Mountain View, CA",
+                "salary": "$125,000 - $155,000",
+                "jobType": "Full-time",
+                "description": "Develop and scale the backend infrastructure that powers Pinterest's features.",
+                "requirements": [
+                    "Experience with Java, Scala, or Go",
+                    "Strong knowledge of distributed systems and databases",
+                    "Experience with building high-throughput, low-latency systems"
+                ]
+            },
+            {
+                "id": "job-046",
+                "title": "Product Designer",
+                "bannerImage": "https://about.pinterest.com/assets/img/life/hero.jpg",
+                "location": "San Francisco, CA",
+                "salary": "$100,000 - $130,000",
+                "jobType": "Full-time",
+                "description": "Design user-friendly and engaging experiences for Pinterest's web and mobile applications.",
+                "requirements": [
+                    "Strong portfolio showcasing product design skills",
+                    "Proficiency in design and prototyping tools (Figma, Sketch)",
+                    "Understanding of user research and usability testing"
+                ]
             }
         ]
     },
     {
         "id": "14",
         "name": "Slack",
-        "logo": "https://example.com/logo/slack.png",
+        "logo": "https://a.slack-edge.com/80588/marketing/img/logos/slack_logo_rgb.png",
         "location": "San Francisco, CA",
-        "website": "https://slack.com",
+        "website": "https://slack.com/",
         "industry": "Communication Tools",
+        "description": "Slack is a messaging app for business that connects people to the information they need. Slack transforms how organizations communicate by bringing teams together as never before.",
         "jobs": [
             {
                 "id": "job-014",
                 "title": "Frontend Engineer",
-                "bannerImage": "https://example.com/banner/14.png",
+                "bannerImage": "https://slack.com/intl/en-gb/careers/img/homepage/hero/homepage-hero-desktop.jpg",
                 "location": "San Francisco, CA",
                 "salary": "$100,000 - $130,000",
                 "jobType": "Full-time",
@@ -332,21 +710,50 @@
                     "Proficient in JavaScript, HTML, and CSS",
                     "Familiarity with frontend testing frameworks"
                 ]
+            },
+            {
+                "id": "job-047",
+                "title": "Backend Engineer",
+                "bannerImage": "https://slack.com/intl/en-gb/careers/img/homepage/hero/homepage-hero-desktop.jpg",
+                "location": "Vancouver, BC",
+                "salary": "$115,000 - $145,000",
+                "jobType": "Full-time",
+                "description": "Develop and maintain the server-side logic and APIs for Slack's core features.",
+                "requirements": [
+                    "Experience with Java, Python, or PHP",
+                    "Strong knowledge of database systems (MySQL, PostgreSQL)",
+                    "Experience with building scalable and reliable APIs"
+                ]
+            },
+            {
+                "id": "job-048",
+                "title": "Mobile Engineer (iOS/Android)",
+                "bannerImage": "https://slack.com/intl/en-gb/careers/img/homepage/hero/homepage-hero-desktop.jpg",
+                "location": "Dublin, Ireland",
+                "salary": "$95,000 - $125,000",
+                "jobType": "Full-time",
+                "description": "Develop and maintain Slack's mobile applications for iOS and Android platforms.",
+                "requirements": [
+                    "Proficiency in Swift/Objective-C (iOS) or Kotlin/Java (Android)",
+                    "Experience with mobile development frameworks and best practices",
+                    "Strong understanding of mobile UI/UX principles"
+                ]
             }
         ]
     },
     {
         "id": "15",
         "name": "Spotify",
-        "logo": "https://example.com/logo/spotify.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg",
         "location": "Stockholm, Sweden",
-        "website": "https://spotify.com",
+        "website": "https://www.spotify.com/",
         "industry": "Entertainment",
+        "description": "Spotify is a digital music, podcast, and video service that gives you access to millions of songs and other content from creators all over the world.",
         "jobs": [
             {
                 "id": "job-015",
                 "title": "Machine Learning Engineer",
-                "bannerImage": "https://example.com/banner/15.png",
+                "bannerImage": "https://content.scdn.co/i/_global/open-graph-default.png",
                 "location": "Stockholm, Sweden",
                 "salary": "$130,000 - $160,000",
                 "jobType": "Full-time",
@@ -356,21 +763,50 @@
                     "Knowledge of deep learning techniques",
                     "Experience with TensorFlow or PyTorch"
                 ]
+            },
+            {
+                "id": "job-049",
+                "title": "Data Analyst",
+                "bannerImage": "https://content.scdn.co/i/_global/open-graph-default.png",
+                "location": "New York, NY",
+                "salary": "$90,000 - $115,000",
+                "jobType": "Full-time",
+                "description": "Analyze user behavior and content data to provide insights for product development and business strategy.",
+                "requirements": [
+                    "Proficiency in SQL and data visualization tools",
+                    "Strong statistical analysis skills",
+                    "Experience with A/B testing and experimentation"
+                ]
+            },
+            {
+                "id": "job-050",
+                "title": "Product Manager",
+                "bannerImage": "https://content.scdn.co/i/_global/open-graph-default.png",
+                "location": "Stockholm, Sweden",
+                "salary": "$110,000 - $140,000",
+                "jobType": "Full-time",
+                "description": "Lead the product vision and strategy for key features within the Spotify platform.",
+                "requirements": [
+                    "3+ years of product management experience in a tech company",
+                    "Strong understanding of user needs and market trends in the music industry",
+                    "Excellent communication and collaboration skills"
+                ]
             }
         ]
     },
     {
         "id": "16",
         "name": "Zoom",
-        "logo": "https://example.com/logo/zoom.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Zoom_icon.svg/2048px-Zoom_icon.svg.png",
         "location": "San Jose, CA",
-        "website": "https://zoom.us",
+        "website": "https://zoom.us/",
         "industry": "Communication",
+        "description": "Zoom is a leading video communication platform providing online meeting and video conferencing services.",
         "jobs": [
             {
                 "id": "job-016",
                 "title": "Site Reliability Engineer",
-                "bannerImage": "https://example.com/banner/16.png",
+                "bannerImage": "https://explore.zoom.us/static/8c698c917193ef2186805989267f181b/img/careers/careers-hero.jpg",
                 "location": "San Jose, CA",
                 "salary": "$120,000 - $145,000",
                 "jobType": "Full-time",
@@ -380,21 +816,50 @@
                     "Knowledge of monitoring and alerting systems",
                     "Familiarity with cloud platforms (AWS, GCP)"
                 ]
+            },
+            {
+                "id": "job-051",
+                "title": "Software Engineer (Real-time Communications)",
+                "bannerImage": "https://explore.zoom.us/static/8c698c917193ef2186805989267f181b/img/careers/careers-hero.jpg",
+                "location": "Denver, CO",
+                "salary": "$110,000 - $140,000",
+                "jobType": "Full-time",
+                "description": "Develop and enhance Zoom's real-time audio and video communication features.",
+                "requirements": [
+                    "Experience with C++, WebRTC, or SIP",
+                    "Strong understanding of network protocols",
+                    "Experience with low-latency, high-performance systems"
+                ]
+            },
+            {
+                "id": "job-052",
+                "title": "Security Engineer",
+                "bannerImage": "https://explore.zoom.us/static/8c698c917193ef2186805989267f181b/img/careers/careers-hero.jpg",
+                "location": "San Jose, CA",
+                "salary": "$115,000 - $145,000",
+                "jobType": "Full-time",
+                "description": "Implement and maintain security measures to protect Zoom's platform and user data.",
+                "requirements": [
+                    "Experience with security tools and technologies",
+                    "Knowledge of security best practices and compliance standards",
+                    "Strong understanding of network and application security"
+                ]
             }
         ]
     },
     {
         "id": "17",
         "name": "Snapchat",
-        "logo": "https://example.com/logo/snapchat.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Snapchat_logo.svg/2048px-Snapchat_logo.svg.png",
         "location": "Los Angeles, CA",
-        "website": "https://snapchat.com",
+        "website": "https://www.snapchat.com/",
         "industry": "Social Media",
+        "description": "Snapchat is a multimedia instant messaging app and service developed by Snap Inc., originally Snapchat Inc. One of the principal features is that pictures and messages are usually only available for a short time before they become inaccessible to their recipients.",
         "jobs": [
             {
                 "id": "job-017",
                 "title": "Mobile Application Developer",
-                "bannerImage": "https://example.com/banner/17.png",
+                "bannerImage": "https://snap-static.s3.amazonaws.com/www-assets/careers/hero/mobile-engineer.jpg",
                 "location": "Los Angeles, CA",
                 "salary": "$100,000 - $130,000",
                 "jobType": "Full-time",
@@ -404,21 +869,50 @@
                     "Experience with iOS and Android development",
                     "Strong understanding of mobile UI/UX principles"
                 ]
+            },
+            {
+                "id": "job-053",
+                "title": "Augmented Reality (AR) Engineer",
+                "bannerImage": "https://snap-static.s3.amazonaws.com/www-assets/careers/hero/mobile-engineer.jpg",
+                "location": "Santa Monica, CA",
+                "salary": "$120,000 - $150,000",
+                "jobType": "Full-time",
+                "description": "Develop and implement augmented reality features and lenses for the Snapchat platform.",
+                "requirements": [
+                    "Experience with AR development platforms (e.g., Lens Studio, ARKit, ARCore)",
+                    "Strong understanding of computer vision and 3D graphics",
+                    "Proficiency in scripting languages (e.g., JavaScript, C#)"
+                ]
+            },
+            {
+                "id": "job-054",
+                "title": "Backend Engineer",
+                "bannerImage": "https://snap-static.s3.amazonaws.com/www-assets/careers/hero/mobile-engineer.jpg",
+                "location": "Los Angeles, CA",
+                "salary": "$110,000 - $140,000",
+                "jobType": "Full-time",
+                "description": "Build and scale the backend infrastructure that supports Snapchat's real-time features and data processing.",
+                "requirements": [
+                    "Experience with Java, Python, or Go",
+                    "Strong knowledge of distributed systems and NoSQL databases",
+                    "Experience with building high-throughput, low-latency systems"
+                ]
             }
         ]
     },
     {
         "id": "18",
         "name": "Spotify",
-        "logo": "https://example.com/logo/spotify.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg",
         "location": "London, UK",
-        "website": "https://spotify.com",
+        "website": "https://www.spotify.com/",
         "industry": "Entertainment",
+        "description": "Spotify is a digital music, podcast, and video service that gives you access to millions of songs and other content from creators all over the world.",
         "jobs": [
             {
                 "id": "job-018",
                 "title": "Software Engineer",
-                "bannerImage": "https://example.com/banner/18.png",
+                "bannerImage": "https://content.scdn.co/i/_global/open-graph-default.png",
                 "location": "London, UK",
                 "salary": "$100,000 - $130,000",
                 "jobType": "Full-time",
@@ -428,21 +922,50 @@
                     "Strong knowledge of databases and cloud services",
                     "Experience working in an agile environment"
                 ]
+            },
+            {
+                "id": "job-055",
+                "title": "Frontend Engineer",
+                "bannerImage": "https://content.scdn.co/i/_global/open-graph-default.png",
+                "location": "London, UK",
+                "salary": "$95,000 - $125,000",
+                "jobType": "Full-time",
+                "description": "Develop user interfaces for Spotify's web and desktop applications.",
+                "requirements": [
+                    "Proficiency in JavaScript, HTML, and CSS",
+                    "Experience with React, Angular, or Vue.js",
+                    "Strong understanding of UI/UX principles"
+                ]
+            },
+            {
+                "id": "job-056",
+                "title": "Data Scientist",
+                "bannerImage": "https://content.scdn.co/i/_global/open-graph-default.png",
+                "location": "Dublin, Ireland",
+                "salary": "$115,000 - $145,000",
+                "jobType": "Full-time",
+                "description": "Apply statistical modeling and machine learning techniques to analyze user data and improve Spotify's features.",
+                "requirements": [
+                    "Strong programming skills in Python or R",
+                    "Experience with statistical analysis and machine learning",
+                    "Knowledge of experimental design and causal inference"
+                ]
             }
         ]
     },
     {
         "id": "19",
         "name": "Airbnb",
-        "logo": "https://example.com/logo/airbnb.png",
+        "logo": "https://a0.muscache.com/airbnb/static/logotype_whitetext_sm-2a7031d52305ee66a70f8d1640f58864.svg",
         "location": "San Francisco, CA",
-        "website": "https://airbnb.com",
+        "website": "https://www.airbnb.com/",
         "industry": "Travel & Hospitality",
+        "description": "Airbnb is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in that locale. It has over 7 million listings worldwide.",
         "jobs": [
             {
                 "id": "job-019",
                 "title": "Backend Developer",
-                "bannerImage": "https://example.com/banner/19.png",
+                "bannerImage": "https://careers.airbnb.com/wp-content/uploads/sites/4/2023/08/Engineering-scaled.jpg",
                 "location": "San Francisco, CA",
                 "salary": "$110,000 - $140,000",
                 "jobType": "Full-time",
@@ -452,21 +975,50 @@
                     "Strong knowledge of databases (PostgreSQL, MySQL)",
                     "Experience with cloud-based infrastructure"
                 ]
+            },
+            {
+                "id": "job-057",
+                "title": "Frontend Engineer",
+                "bannerImage": "https://careers.airbnb.com/wp-content/uploads/sites/4/2023/08/Engineering-scaled.jpg",
+                "location": "Dublin, Ireland",
+                "salary": "$95,000 - $125,000",
+                "jobType": "Full-time",
+                "description": "Develop user-facing features for Airbnb's web and mobile applications.",
+                "requirements": [
+                    "Proficiency in JavaScript, HTML, and CSS",
+                    "Experience with React or similar frontend frameworks",
+                    "Strong understanding of UI/UX principles"
+                ]
+            },
+            {
+                "id": "job-058",
+                "title": "Data Scientist",
+                "bannerImage": "https://careers.airbnb.com/wp-content/uploads/sites/4/2023/08/Engineering-scaled.jpg",
+                "location": "San Francisco, CA",
+                "salary": "$120,000 - $150,000",
+                "jobType": "Full-time",
+                "description": "Analyze Airbnb's vast datasets to provide insights and drive product decisions.",
+                "requirements": [
+                    "Strong programming skills in Python or R",
+                    "Experience with statistical modeling and machine learning",
+                    "Ability to communicate complex data insights effectively"
+                ]
             }
         ]
     },
     {
         "id": "20",
         "name": "Spotify",
-        "logo": "https://example.com/logo/spotify.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg",
         "location": "Stockholm, Sweden",
-        "website": "https://spotify.com",
+        "website": "https://www.spotify.com/",
         "industry": "Entertainment",
+        "description": "Spotify is a digital music, podcast, and video service that gives you access to millions of songs and other content from creators all over the world.",
         "jobs": [
             {
                 "id": "job-020",
                 "title": "Cloud Engineer",
-                "bannerImage": "https://example.com/banner/20.png",
+                "bannerImage": "https://content.scdn.co/i/_global/open-graph-default.png",
                 "location": "Stockholm, Sweden",
                 "salary": "$115,000 - $140,000",
                 "jobType": "Full-time",
@@ -475,6 +1027,193 @@
                     "Experience with AWS and GCP",
                     "Strong knowledge of cloud architecture",
                     "Proficiency in automation tools like Terraform or Ansible"
+                ]
+            },
+            {
+                "id": "job-059",
+                "title": "Security Engineer",
+                "bannerImage": "https://content.scdn.co/i/_global/open-graph-default.png",
+                "location": "London, UK",
+                "salary": "$105,000 - $135,000",
+                "jobType": "Full-time",
+                "description": "Implement and maintain security measures to protect Spotify's platform and user data.",
+                "requirements": [
+                    "Experience with security tools and technologies",
+                    "Knowledge of security best practices and compliance standards",
+                    "Strong understanding of network and application security"
+                ]
+            },
+            {
+                "id": "job-060",
+                "title": "Data Engineer",
+                "bannerImage": "https://content.scdn.co/i/_global/open-graph-default.png",
+                "location": "Stockholm, Sweden",
+                "salary": "$120,000 - $150,000",
+                "jobType": "Full-time",
+                "description": "Build and maintain scalable data pipelines to support Spotify's analytics and machine learning initiatives.",
+                "requirements": [
+                    "Experience with big data technologies (Spark, Kafka)",
+                    "Proficiency in SQL and Python",
+                    "Experience with ETL processes"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "21",
+        "name": "Netflix",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg",
+        "location": "Los Gatos, CA",
+        "website": "https://www.netflix.com/",
+        "industry": "Entertainment",
+        "description": "Netflix is a subscription-based streaming service offering a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+        "jobs": [
+            {
+                "id": "job-021",
+                "title": "Software Engineer (Streaming)",
+                "bannerImage": "https://jobs.netflix.com/assets/811f8e69-f93c-4c0f-9c19-15a2ff856904/hero-b.jpg",
+                "location": "Los Gatos, CA",
+                "salary": "$130,000 - $170,000",
+                "jobType": "Full-time",
+                "description": "Develop and optimize the software that powers Netflix's global streaming platform.",
+                "requirements": [
+                    "Experience with Java, C++, or Python",
+                    "Strong understanding of distributed systems and video streaming technologies",
+                    "Experience with cloud platforms (AWS)"
+                ]
+            },
+            {
+                "id": "job-061",
+                "title": "Machine Learning Engineer",
+                "bannerImage": "https://jobs.netflix.com/assets/811f8e69-f93c-4c0f-9c19-15a2ff856904/hero-b.jpg",
+                "location": "Los Angeles, CA",
+                "salary": "$140,000 - $180,000",
+                "jobType": "Full-time",
+                "description": "Build and deploy machine learning models to improve content recommendations and personalization.",
+                "requirements": [
+                    "Strong experience with Python and ML frameworks (TensorFlow, PyTorch)",
+                    "Knowledge of deep learning and recommendation systems",
+                    "Experience with large-scale data processing and model deployment"
+                ]
+            },
+            {
+                "id": "job-062",
+                "title": "Data Scientist (Content)",
+                "bannerImage": "https://jobs.netflix.com/assets/811f8e69-f93c-4c0f-9c19-15a2ff856904/hero-b.jpg",
+                "location": "Los Gatos, CA",
+                "salary": "$125,000 - $160,000",
+                "jobType": "Full-time",
+                "description": "Analyze content performance and user engagement data to inform content strategy and production.",
+                "requirements": [
+                    "Strong analytical and problem-solving skills",
+                    "Proficiency in SQL and statistical analysis tools",
+                    "Experience with causal inference and experimentation"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "22",
+        "name": "Google",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg",
+        "location": "Mountain View, CA",
+        "website": "https://careers.google.com/",
+        "industry": "Technology",
+        "description": "Google's mission is to organize the world's information and make it universally accessible and useful. Through products and platforms like Search, Maps, Gmail, Android, Chrome, YouTube, Google Cloud, and others, Google reaches billions of people every day.",
+        "jobs": [
+            {
+                "id": "job-022",
+                "title": "Software Engineer",
+                "bannerImage": "https://careers.google.com/static/hero/hero-b.jpg",
+                "location": "Mountain View, CA",
+                "salary": "$120,000 - $160,000",
+                "jobType": "Full-time",
+                "description": "Develop and maintain software solutions for Google's diverse range of products and services.",
+                "requirements": [
+                    "Bachelor's degree in Computer Science or related field",
+                    "Strong programming skills in one or more general-purpose languages (e.g., Java, C++, Python)",
+                    "Experience with data structures and algorithms"
+                ]
+            },
+            {
+                "id": "job-063",
+                "title": "Product Manager",
+                "bannerImage": "https://careers.google.com/static/hero/hero-b.jpg",
+                "location": "San Francisco, CA",
+                "salary": "$130,000 - $170,000",
+                "jobType": "Full-time",
+                "description": "Define and execute the product strategy and roadmap for key Google products.",
+                "requirements": [
+                    "3+ years of product management experience",
+                    "Strong understanding of technology and user needs",
+                    "Excellent communication and leadership skills"
+                ]
+            },
+            {
+                "id": "job-064",
+                "title": "Research Scientist (AI)",
+                "bannerImage": "https://careers.google.com/static/hero/hero-b.jpg",
+                "location": "Cambridge, MA",
+                "salary": "$150,000 - $200,000",
+                "jobType": "Full-time",
+                "description": "Conduct cutting-edge research in artificial intelligence and machine learning.",
+                "requirements": [
+                    "PhD in Computer Science or related field with a focus on AI/ML",
+                    "Strong publication record in top AI/ML conferences",
+                    "Experience with deep learning frameworks and techniques"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "23",
+        "name": "Amazon",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+        "location": "Seattle, WA",
+        "website": "https://www.amazon.jobs/en/",
+        "industry": "E-commerce & Cloud Computing",
+        "description": "Amazon is a global e-commerce and technology company that offers a wide range of products and services, including online retail, cloud computing (AWS), digital streaming, and artificial intelligence.",
+        "jobs": [
+            {
+                "id": "job-023",
+                "title": "Software Development Engineer",
+                "bannerImage": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/wac/ace/evergreen/prime-ribbons-2023-jobs-desktop-tall-1500x600._CB573288843_.jpg",
+                "location": "Seattle, WA",
+                "salary": "$115,000 - $150,000",
+                "jobType": "Full-time",
+                "description": "Design, develop, and deploy software solutions for Amazon's various businesses.",
+                "requirements": [
+                    "Bachelor's degree in Computer Science or related field",
+                    "Proficiency in at least one modern programming language (e.g., Java, Python, C++)",
+                    "Experience with object-oriented design and data structures"
+                ]
+            },
+            {
+                "id": "job-065",
+                "title": "Cloud Solutions Architect (AWS)",
+                "bannerImage": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/wac/ace/evergreen/prime-ribbons-2023-jobs-desktop-tall-1500x600._CB573288843_.jpg",
+                "location": "Arlington, VA",
+                "salary": "$140,000 - $180,000",
+                "jobType": "Full-time",
+                "description": "Design and implement scalable and secure cloud solutions on the Amazon Web Services (AWS) platform.",
+                "requirements": [
+                    "Extensive experience with AWS services",
+                    "Strong understanding of cloud architecture best practices",
+                    "AWS certifications preferred"
+                ]
+            },
+            {
+                "id": "job-066",
+                "title": "Business Intelligence Engineer",
+                "bannerImage": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/wac/ace/evergreen/prime-ribbons-2023-jobs-desktop-tall-1500x600._CB573288843_.jpg",
+                "location": "Austin, TX",
+                "salary": "$100,000 - $130,000",
+                "jobType": "Full-time",
+                "description": "Develop and maintain BI solutions to provide insights into Amazon's business performance.",
+                "requirements": [
+                    "Proficiency in SQL and data warehousing concepts",
+                    "Experience with BI tools (e.g., Tableau, Power BI)",
+                    "Strong data modeling and ETL skills"
                 ]
             }
         ]

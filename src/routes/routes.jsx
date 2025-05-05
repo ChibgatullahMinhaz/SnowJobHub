@@ -7,6 +7,8 @@ import CompanyDetails from "../Pages/CompanyDetails";
 import ErrorLayout from "../layouts/ErrorLayout";
 import SingUp from "../Features/SingUp";
 import Login from "../Features/Login";
+import AllCompanies from "../Components/AllCompanies";
+import Jobs from "../Pages/Jobs";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -16,6 +18,10 @@ export const router = createBrowserRouter([
         index: true,
         path: "/",
         element: <Home></Home>
+      },
+      {
+        path: "/jobs",
+        element: <Jobs></Jobs>,
       },
       {
         path: "/about",
@@ -28,7 +34,7 @@ export const router = createBrowserRouter([
       ,
       {
         path: '/companies',
-        element: <CompanyDetails></CompanyDetails>
+        element: <AllCompanies></AllCompanies>
       }
       ,
       {

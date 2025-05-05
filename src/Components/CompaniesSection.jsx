@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom"; // Link কম্পোনেন্টের মাধ্যমে রাউটিং হবে
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { LoaderContext } from "../Store/Context/LocaderContext";
+import { CompaniesContext } from "../Store/Context/CompaniesContext";
 
 const container = {
   hidden: {},
@@ -18,36 +19,41 @@ const item = {
 };
 
 const CompaniesSection = () => {
-  const {setIsLoading, isLoading} = useContext(LoaderContext);
+  const { data } = useContext(CompaniesContext);
+  const { setIsLoading, isLoading } = useContext(LoaderContext);
   const [companies, setCompanies] = useState([]);
   const [error, setError] = useState(null);
-
+const navigate = useNavigate();
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch("/companies.json");
-        if (!res.ok) {
-          throw new Error("Failed to load data");
-        }
-        const data = await res.json();
-        setCompanies(data);
-      } catch (error) {
-        setError(error.message);
-        console.error("Error loading companies:", error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchData();
-  }, [setIsLoading]);
+    try {
+      setIsLoading(true)
+      setCompanies(data.slice(0, 4));
+    } catch (error) {
+      setError(error.message)
+    }finally{
+      setIsLoading(false)
+    }
+  }, [setCompanies, data, setIsLoading]);
 
   if (isLoading) {
-    return <span className="loading loading-spinner text-primary"></span>;
+    return (
+      <div className="flex justify-center items-center">
+        <Atom
+          color={["#00FFFF", "#B0E0E6", "#ADD8E6", "#FFFFFF"]}
+          size="large"
+          text=""
+          textColor=""
+        />
+      </div>
+    );
   }
 
   if (error) {
     return <div>Error: {error}</div>;
+  }
+
+  const handleNavigateIntoDetailsPage= (company) => {
+    navigate(`/companies/details/${company?.name}`)
   }
 
   return (
@@ -75,19 +81,20 @@ const CompaniesSection = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8"
+          className="grid grid-cols-2 md:grid-cols-4 gap-8 cursor-pointer"
         >
           {companies.map((company) => (
             <motion.div
+            onClick={()=>handleNavigateIntoDetailsPage(company)}
               key={company.id}
               variants={item}
               className="bg-white rounded-xl p-6 shadow-md flex flex-col items-center text-center hover:shadow-lg transition-all duration-300"
             >
-              <Link to={`/companies/details${company.detailsPage}`}>
+              <Link >
                 <div className="w-24 h-24 mb-4 flex items-center justify-center bg-gray-200 rounded-full">
                   <img
-                    src={`${company.logo}`}
-                    alt={company.name}
+                    src={`${company?.logo}`}
+                    alt={company?.name}
                     className="w-full h-full object-contain"
                   />
                 </div>
