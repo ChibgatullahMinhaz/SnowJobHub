@@ -64,13 +64,18 @@ const Navbar = () => {
             )}
           </ul>
         </div>
-        <Logo></Logo>
+        <Link to={`/`}>
+          <Logo ></Logo>
+        </Link>
       </div>
       <div className="navbar-end  lg:hidden">
         {user && (
           <div className="flex gap-x-1.5 items-center">
-            <img className="h-10 w-10 rounded-full" src={user?.photoURL} alt={user?.displayName} />
-            
+            <img
+              className="h-10 w-10 rounded-full"
+              src={user?.photoURL}
+              alt={user?.displayName}
+            />
           </div>
         )}
       </div>
@@ -89,12 +94,15 @@ const Navbar = () => {
             <NavLink to={`/Contact`}>Contact</NavLink>
           </li>
         </ul>
-        {user ?  (
+        {user ? (
           <div className="flex gap-x-1.5 items-center">
-            <img className="h-10 w-10 rounded-full" src={user?.photoURL} alt={user?.displayName} />
-            
+            <img
+              className="h-10 w-10 rounded-full"
+              src={user?.photoURL}
+              alt={user?.displayName}
+            />
           </div>
-        ): (
+        ) : (
           <div className="action flex gap-x-3.5">
             <Link
               className=" btn bg-[#1976D2] hover:bg-[#1565C0] text-white "

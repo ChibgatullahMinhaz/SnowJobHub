@@ -7,12 +7,12 @@ import Achievements from "../Components/Achievements";
 import Testimonials from "../Components/Testimonials";
 
 const Home = () => {
-     useEffect(()=>{
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        },[])
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <Helmet>

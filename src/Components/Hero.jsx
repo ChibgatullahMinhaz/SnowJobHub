@@ -50,7 +50,7 @@ const Hero = () => {
             <Link to="/companies">
               <button className="btn w-full sm:w-auto bg-[#64B5F6] hover:bg-[#42A5F5] text-white">Browse Companies</button>
             </Link>
-            <Link to="/register">
+            <Link to="/SingUp">
               <button className="btn w-full sm:w-auto bg-white hover:bg-[#A689FA]">Create Account</button>
             </Link>
           </motion.div>

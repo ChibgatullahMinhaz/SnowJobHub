@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { Atom } from "react-loading-indicators";
+import { LoaderContext } from "../Store/Context/LocaderContext";
 
 const container = {
   hidden: {},
@@ -16,8 +18,9 @@ const item = {
 };
 
 const HowItWorks = () => {
+  const { isLoading, setIsLoading } = useContext(LoaderContext);
+
   const [stepsData, setStepsData] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -33,15 +36,19 @@ const HowItWorks = () => {
         setError(error.message);
         console.error("Error loading data:", error);
       } finally {
-        setLoading(false);
+        setIsLoading(false);
       }
     };
 
     fetchData();
-  }, []);
+  }, [setIsLoading]);
 
-  if (loading) {
-    return <div>Loading...</div>;
+  if (isLoading) {
+    return (
+      <div className="flex justify-center items-center">
+        <Atom color="#32cd32" size="large" text="" textColor="" />
+      </div>
+    );
   }
 
   if (error) {
@@ -59,13 +66,9 @@ const HowItWorks = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            How{" "}
-            
-              <span className="text-blue-500">Snow</span>
-              <span className="text-gray-700">Job</span>
-              <span className="text-blue-500">Hub</span>
-            {" "}
-            Works
+            How <span className="text-blue-500">Snow</span>
+            <span className="text-gray-700">Job</span>
+            <span className="text-blue-500">Hub</span> Works
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
             Our platform makes it easy to find and apply for jobs that match

@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Snowfall from "react-snowfall";
 import { ToastContainer } from "react-toastify";
 import { LoaderContext } from "../Store/Context/LocaderContext";
+import { Atom } from "react-loading-indicators";
 
 const MainLayout = () => {
   const { isLoading } = useContext(LoaderContext);
@@ -18,7 +19,9 @@ const MainLayout = () => {
   return (
     <>
       {isLoading ? (
-        <span className="loading loading-spinner text-primary"></span>
+        <div className="flex justify-center items-center h-screen">
+        <Atom color={["#00FFFF", "#B0E0E6", "#ADD8E6", "#FFFFFF"]} size="large" text="" textColor="" />
+      </div>
       ) : (
         <>
           <ToastContainer></ToastContainer>
