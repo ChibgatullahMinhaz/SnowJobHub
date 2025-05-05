@@ -9,6 +9,7 @@ import Login from "../Features/Login";
 import AllCompanies from "../Components/AllCompanies";
 import Jobs from "../Pages/Jobs";
 import DetailsPage from "../Pages/DetailsPage";
+import PrivetRoute from "./PrivetRoute";
 
 export const router = createBrowserRouter([
   {
@@ -22,7 +23,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/jobs",
-        element: <Jobs></Jobs>,
+        element: <PrivetRoute><Jobs></Jobs></PrivetRoute> ,
       },
       {
         path: "/about",
@@ -34,7 +35,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/companies",
-        element: <AllCompanies></AllCompanies>,
+        element: <PrivetRoute><AllCompanies></AllCompanies></PrivetRoute> ,
       },
       {
         path: "/login",
