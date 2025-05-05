@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useContext, useEffect, useState } from "react";
 import { Atom } from "react-loading-indicators";
 import { LoaderContext } from "../Store/Context/LocaderContext";
+import { toast } from "react-toastify";
 
 const container = {
   hidden: {},
@@ -34,7 +35,7 @@ const HowItWorks = () => {
         setStepsData(data);
       } catch (error) {
         setError(error.message);
-        console.error("Error loading data:", error);
+        toast.error("Error loading data:", error);
       } finally {
         setIsLoading(false);
       }

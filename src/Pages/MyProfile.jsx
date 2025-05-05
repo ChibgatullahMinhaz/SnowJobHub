@@ -1,11 +1,93 @@
-import React from 'react';
+import { motion } from "framer-motion";
+import { useContext, useEffect } from "react";
+import { AuthContext } from "../Store/Context/AuthContext";
+import { toast } from "react-toastify";
+import { useLocation, useNavigate } from "react-router-dom";
 
-const MyProfile = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+const containerVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut",
+    },
+  },
 };
 
-export default MyProfile;
+export default function MyProfile() {
+  const { user, logout } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const location = useLocation();
+  useEffect(() => {
+    document.title = "User Profile | snowjobhub";
+  }, []);
+  const handleSingout = () => {
+    logout()
+      .then(() => {
+        toast.success("Log-out Successfully");
+        navigate(location?.state || "/");
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      });
+  };
+
+  return (
+    <motion.div
+      className="min-h-screen px-8 py-12 bg-gradient-to-br from-gray-100 to-white text-gray-800"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ staggerChildren: 0.2 }}
+      variants={containerVariants}
+    >
+      <motion.h1
+        className="text-4xl font-bold mb-6 text-center"
+        variants={containerVariants}
+      >
+        👤 My Profile
+      </motion.h1>
+
+      <motion.div
+        className="max-w-xl mx-auto bg-white shadow-xl rounded-2xl p-6"
+        variants={containerVariants}
+      >
+        <motion.img
+          src={user?.photoURL}
+          alt="Profile"
+          className="rounded-full w-32 h-32 mx-auto mb-4 border-4 border-gray-300"
+          whileHover={{ scale: 1.1 }}
+        />
+
+        <motion.h2 className="text-xl font-semibold text-center capitalize">
+          {user?.displayName}
+        </motion.h2>
+
+        <motion.p className="text-center mt-2 text-gray-600">
+          Front-end Developer | MERN Stack Learner
+        </motion.p>
+
+        <motion.div className="mt-4 text-center">
+          <p>
+            <strong>Email:</strong> {user?.email}
+          </p>
+          <p>
+            <strong>Location:</strong> Habiganj, Bangladesh
+          </p>
+        </motion.div>
+      </motion.div>
+      <motion.div className="mt-6 text-center">
+        <motion.button
+          onClick={handleSingout}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="bg-gradient-to-r from-blue-200 to-blue-400 hover:from-blue-300 hover:to-blue-500 text-white font-semibold py-2 px-6 rounded-full shadow-md transition-all duration-300"
+        >
+          ❄️ Logout
+        </motion.button>
+      </motion.div>
+    </motion.div>
+  );
+}

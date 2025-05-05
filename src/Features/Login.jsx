@@ -1,17 +1,17 @@
 import React, { useContext, useRef } from "react";
-import { Link, useLocation, useNavigate } from "react-router";
-import { GoogleAuthProvider, sendPasswordResetEmail } from "firebase/auth";
+import { Link, Navigate, useLocation, useNavigate } from "react-router";
+import { GoogleAuthProvider } from "firebase/auth";
 import { toast } from "react-toastify";
 import { AuthContext } from "../Store/Context/AuthContext";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
-import { auth } from "../Utilities/firebase.init";
+
 const Login = () => {
   const emailRef = useRef();
   const { creteUserWithGoogle, userLogin } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
-  console.log(location);
+  
 
   const handleSingIn = (e) => {
     e.preventDefault();
@@ -36,19 +36,7 @@ const Login = () => {
   };
 
   const handleReset = () => {
-    const email = emailRef.current.value;
-    if (!email) {
-      toast.error("Please Enter Your Email");
-      return;
-    }
-    sendPasswordResetEmail(auth, email)
-      .then(() => {
-        toast.success("we send email for reset password ");
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        console.log(errorCode);
-      });
+    navigate('/resetPassword')
   };
 
   // login with google
@@ -56,7 +44,6 @@ const Login = () => {
   const handleLoginWithGoogle = () => {
     creteUserWithGoogle(provider)
       .then((result) => {
-        console.log(result);
         toast.success("User Login Successfully");
         navigate(location?.state || "/");
       })
@@ -88,23 +75,23 @@ const Login = () => {
               className="input"
               placeholder="Email"
               autoComplete="email"
-              ref={emailRef}
+              
             />
             <label className="label">Password</label>
             <input
               required
               type="password"
-              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-              title="Must be more than 8 characters, including number, lowercase letter, uppercase letter"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+              title="Must be more than 6 characters, including number, lowercase letter, uppercase letter"
               autoComplete="current-password"
               name="password"
               className="input"
               placeholder="Password"
             />
             <div>
-              <a onClick={handleReset} className="link link-hover">
+              <aL onClick={handleReset} className="link link-hover">
                 Forgot password?
-              </a>
+              </aL>
             </div>
             <br />
             <p>

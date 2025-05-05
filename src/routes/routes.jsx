@@ -10,6 +10,8 @@ import AllCompanies from "../Components/AllCompanies";
 import Jobs from "../Pages/Jobs";
 import DetailsPage from "../Pages/DetailsPage";
 import PrivetRoute from "./PrivetRoute";
+import ResetPassword from "../Components/ResetPassword";
+import MyProfile from "../Pages/MyProfile";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ export const router = createBrowserRouter([
       {
         path: "/companies",
         element: <PrivetRoute><AllCompanies></AllCompanies></PrivetRoute> ,
+      },
+      {
+        path: "/resetPassword",
+        element: <ResetPassword></ResetPassword> ,
+      },
+      {
+        path: "/user/:name/Profile",
+        element: <PrivetRoute> <MyProfile></MyProfile> </PrivetRoute> ,
       },
       {
         path: "/login",

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import Logo from "./Logo";
-import { Link, NavLink } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router";
 import { AuthContext } from "../Store/Context/AuthContext";
 import { motion } from "framer-motion";
 
@@ -16,8 +16,10 @@ const item = {
 
 const Navbar = () => {
   const { user, isLoading, setIsLoading } = useContext(AuthContext);
-
-
+  const navigate = useNavigate();
+  const handleUserProfile = () => {
+    navigate(`/user/${user.displayName}/Profile`);
+  };
   return (
     <>
       {!isLoading && (
@@ -90,6 +92,7 @@ const Navbar = () => {
             {user && (
               <div className="flex gap-x-1.5 items-center">
                 <img
+                  onClick={handleUserProfile}
                   className="h-10 w-10 rounded-full"
                   src={user?.photoURL}
                   alt={user?.displayName}
@@ -119,7 +122,7 @@ const Navbar = () => {
             </motion.ul>
             {user ? (
               <div className="flex gap-x-1.5 items-center">
-                <img
+                <img onClick={handleUserProfile}
                   className="h-10 w-10 rounded-full"
                   src={user?.photoURL}
                   alt={user?.displayName}
