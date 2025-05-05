@@ -74,7 +74,7 @@ const CompaniesSection = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
+          className="grid grid-cols-2 md:grid-cols-4 gap-8"
         >
           {companies.map((company) => (
             <motion.div
@@ -82,7 +82,7 @@ const CompaniesSection = () => {
               variants={item}
               className="bg-white rounded-xl p-6 shadow-md flex flex-col items-center text-center hover:shadow-lg transition-all duration-300"
             >
-              <Link to={company.detailsPage}>
+              <Link to={`/companies/details${company.detailsPage}`}>
                 <div className="w-24 h-24 mb-4 flex items-center justify-center bg-gray-200 rounded-full">
                   <img
                     src={`${company.logo}`}
