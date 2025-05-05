@@ -9,6 +9,7 @@ import SingUp from "../Features/SingUp";
 import Login from "../Features/Login";
 import AllCompanies from "../Components/AllCompanies";
 import Jobs from "../Pages/Jobs";
+import DetailsPage from "../Pages/DetailsPage";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -28,8 +29,8 @@ export const router = createBrowserRouter([
         element: <About></About>,
       },
       {
-        path: '/companies/details/:name',
-        element: <CompanyDetails></CompanyDetails>
+        path: '/companies/details/:name/:Id',
+        element: <DetailsPage></DetailsPage>
       }
       ,
       {

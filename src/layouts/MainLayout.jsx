@@ -21,7 +21,7 @@ const MainLayout = () => {
     });
     const timing = setTimeout(() => {
       setIsLoading(false);
-    }, 200);
+    }, 1000);
 
     return () => clearTimeout(timing);
   }, [location, setIsLoading]);

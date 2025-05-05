@@ -2,7 +2,7 @@
     {
         "id": "1",
         "name": "Google",
-        "logo": "../src/assets/logo/Google.svg.png",
+        "logo": "https://i.ibb.co.com/bj0rNH1k/2048px-Google-G-logo-svg.png",
         "location": "Mountain View, CA",
         "website": "https://about.google/",
         "industry": "Technology",
@@ -108,7 +108,7 @@
     {
         "id": "3",
         "name": "Amazon",
-        "logo": "/src/assets/logo/amazon.jpg",
+        "logo": "https://i.ibb.co.com/yFFSPpZx/amazon.jpg",
         "location": "Seattle, WA",
         "website": "https://www.aboutamazon.com/",
         "industry": "E-commerce",

@@ -53,7 +53,7 @@ const navigate = useNavigate();
   }
 
   const handleNavigateIntoDetailsPage= (company) => {
-    navigate(`/companies/details/${company?.name}`)
+    navigate(`/companies/details/${company?.name}/${company?.id}`)
   }
 
   return (

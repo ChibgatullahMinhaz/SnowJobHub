@@ -26,7 +26,7 @@ const AllCompanies = () => {
   const [companies, setCompanies] = useState([]);
 
   useEffect(() => {
-    
+
     try {
       setIsLoading(true);
       setCompanies(data);
@@ -108,15 +108,15 @@ const AllCompanies = () => {
                   <h2 className="card-title text-lg text-gray-700">{company.name}</h2>
                 </div>
                 <p className="line-clamp-3 text-gray-600 mb-4">
-                  {company.description}
+                  {company?.description}
                 </p>
                 <div className="flex justify-between items-center">
                   <div className="text-sm text-gray-500">
-                    {company.jobs.length} open position
-                    {company.jobs.length !== 1 ? "s" : ""}
+                    {company?.jobs.length} open position
+                    {company?.jobs.length !== 1 ? "s" : ""}
                   </div>
                   <Link
-                    to={`/companies/details/${company?.name}`}
+                    to={`/companies/details/${company?.name}/${company.id}`}
                     className="btn bg-[#64B5F6] hover:bg-[#42A5F5] text-base-300 btn-sm"
                   >
                     View Company

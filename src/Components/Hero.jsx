@@ -58,7 +58,7 @@ const Hero = () => {
 
         <div className="md:w-1/2">
           <motion.img
-            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+            src="https://i.ibb.co.com/fGVjCZsG/Gemini-Generated-Image-y4ayfny4ayfny4ay.jpg"
             alt="Person searching for jobs"
             className="rounded-lg shadow-xl w-full h-auto object-cover max-h-[500px]"
             loading="lazy" 

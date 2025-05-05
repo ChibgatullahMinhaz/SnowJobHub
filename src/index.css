@@ -7,22 +7,14 @@
 
 @plugin "daisyui/theme" {
   name: "light";
-  default: true;
-  --color-primary: #ffffff;
-  --color-primary2: #f0f4f8;
-  --color-secondary: #cfd8dc;
-  --color-action: #1976D2;
-  --color-link: #039be5;
-  --color-base-200: #f4f8fb;
   --color-base-300: #e3f2fd;
-  --color-local: #ffeb3b;
 }
 
 * {
   font-family: "Poppins", sans-serif;
 }
 body {
-  background: linear-gradient(to bottom, #f4f8fb, #e3f2fd); 
+  background: linear-gradient(to bottom, #f4f8fb, #e3f2fd);
   color: #2c3e50;
   font-family: "Poppins", sans-serif;
 }
@@ -30,6 +22,6 @@ a.active {
   @apply bg-base-300;
 }
 
-.minHight{
+.minHight {
   min-height: calc(100vh - 370px);
 }
