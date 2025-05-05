@@ -1,0 +1,8 @@
+[
+    { "id": 1, "name": "Company A", "logo": "logo_a.png", "detailsPage": "/company-a" },
+    { "id": 2, "name": "Company B", "logo": "logo_b.png", "detailsPage": "/company-b" },
+    { "id": 3, "name": "Company C", "logo": "logo_c.png", "detailsPage": "/company-c" },
+    { "id": 4, "name": "Company D", "logo": "logo_d.png", "detailsPage": "/company-d" },
+    { "id": 5, "name": "Company E", "logo": "logo_e.png", "detailsPage": "/company-e" },
+    { "id": 6, "name": "Company F", "logo": "logo_f.png", "detailsPage": "/company-f" }
+  ]

@@ -6,7 +6,7 @@
 
 ## 🌐 Live URL
 
-[🔗 Visit JobTrack Live](https://your-deployed-site-url.com)
+[🔗 Visit JobTrack Live](https://snowjobhub.web.app/)
 
 ---
 

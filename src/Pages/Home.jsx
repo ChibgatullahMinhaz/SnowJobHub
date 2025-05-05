@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import Hero from "../Components/Hero";
 import { Helmet } from "react-helmet";
 import HowItWorks from "../Components/HowItWorks";
+import CompaniesSection from "../Components/CompaniesSection";
+import Achievements from "../Components/Achievements";
+import Testimonials from "../Components/Testimonials";
 
 const Home = () => {
      useEffect(()=>{
@@ -24,6 +27,9 @@ const Home = () => {
 
       <Hero></Hero>
       <HowItWorks></HowItWorks>
+      <CompaniesSection></CompaniesSection>
+      <Achievements></Achievements>
+      <Testimonials></Testimonials>
     </>
   );
 };
