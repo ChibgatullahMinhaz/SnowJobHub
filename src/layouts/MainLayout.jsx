@@ -70,7 +70,7 @@ const MainLayout = () => {
             </main>
 
             {/* Footer */}
-            <footer className="relative z-10">
+            <footer>
               <Footer />
             </footer>
           </div>

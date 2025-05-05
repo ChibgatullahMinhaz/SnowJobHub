@@ -1,41 +1,37 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import JobCard from "../Components/JobCard";
 import JobDetailsModal from "../Components/JobDetailsModal";
+import { CompaniesContext } from "../Store/Context/CompaniesContext";
+import { toast } from "react-toastify";
 
-
-
-
-const jobs = [
-    {
-      id: 1,
-      title: "Frontend Developer",
-      location: "Remote",
-      type: "Full-time",
-      remote: true,
-      salary: { min: 50000, max: 80000, currency: "USD" },
-      description: "Build responsive UIs and animations with React."
-    }
-    // ... more jobs
-  ];
-  
 const Jobs = () => {
-    const [selectedJob, setSelectedJob] = useState(null);
+  const [selectedJob, setSelectedJob] = useState(null);
+  const [allJobs, setAllJobs] = useState([]);
+  const { data } = useContext(CompaniesContext);
+  useEffect(() => {
+    try {
+      const filteringJobs = data.map((company) => company.jobs);
+      setAllJobs(filteringJobs.flat());
+    } catch (error) {
+      toast.error(error.message);
+    }
+  }, [data, setAllJobs]);
 
-
-
-    return (
+  return (
+    <>
       <div className="grid gap-4 p-4 md:grid-cols-2 lg:grid-cols-3">
-        {jobs.map(job => (
+        {allJobs.map((job) => (
           <JobCard key={job.id} job={job} onClick={setSelectedJob} />
         ))}
-  
+
         <JobDetailsModal
           job={selectedJob}
           onClose={() => setSelectedJob(null)}
-          onApply={() => alert("Apply clicked")}
-        />    
+          url={`www.hsdfjs`}
+        />
       </div>
-    )
+    </>
+  );
 };
 
 export default Jobs;

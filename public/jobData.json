@@ -15,6 +15,7 @@
                 "location": "Mountain View, CA",
                 "salary": "$120,000 - $150,000",
                 "jobType": "Full-time",
+                "website": "https://about.google/",
                 "description": "Work on cutting-edge projects and enhance Google's suite of products.",
                 "requirements": [
                     "Experience in Java or Python",
@@ -28,6 +29,7 @@
                 "bannerImage": "https://careers.google.com/static/hero/hero-global.jpg",
                 "location": "Mountain View, CA",
                 "salary": "$140,000 - $180,000",
+                "website": "https://about.google/",
                 "jobType": "Full-time",
                 "description": "Conduct research in areas such as AI, machine learning, and natural language processing.",
                 "requirements": [
@@ -42,6 +44,7 @@
                 "bannerImage": "https://careers.google.com/static/hero/hero-global.jpg",
                 "location": "Sunnyvale, CA",
                 "salary": "$130,000 - $160,000",
+                "website": "https://about.google/",
                 "jobType": "Full-time",
                 "description": "Lead complex technical projects, ensuring timely delivery and high quality.",
                 "requirements": [
@@ -67,6 +70,7 @@
                 "bannerImage": "https://careers.microsoft.com/static/89e3976099293519827150861491097c/img/hero.jpg",
                 "location": "Redmond, WA",
                 "salary": "$100,000 - $130,000",
+                 "website": "https://www.microsoft.com/en-us/",
                 "jobType": "Full-time",
                 "description": "Lead product development and lifecycle for enterprise solutions.",
                 "requirements": [
@@ -81,6 +85,7 @@
                 "bannerImage": "https://careers.microsoft.com/static/89e3976099293519827150861491097c/img/hero.jpg",
                 "location": "Bellevue, WA",
                 "salary": "$110,000 - $140,000",
+                 "website": "https://www.microsoft.com/en-us/",
                 "jobType": "Full-time",
                 "description": "Develop and implement security measures to protect Microsoft's systems and data.",
                 "requirements": [
@@ -95,6 +100,7 @@
                 "bannerImage": "https://careers.microsoft.com/static/89e3976099293519827150861491097c/img/hero.jpg",
                 "location": "Redmond, WA",
                 "salary": "$80,000 - $100,000",
+                 "website": "https://www.microsoft.com/en-us/",
                 "jobType": "Full-time",
                 "description": "Analyze large datasets to provide insights and support business decisions.",
                 "requirements": [
@@ -120,6 +126,7 @@
                 "bannerImage": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/wethinkbig/hero/v2/WETB_hero_UX_design_desktop_2x._CB635488941_.jpg",
                 "location": "Seattle, WA",
                 "salary": "$90,000 - $120,000",
+                 "website": "https://www.aboutamazon.com/",
                 "jobType": "Full-time",
                 "description": "Design user-centric interfaces for Amazon's e-commerce platform.",
                 "requirements": [
@@ -134,6 +141,7 @@
                 "bannerImage": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/wethinkbig/hero/v2/WETB_hero_supply_chain_desktop_2x._CB635488941_.jpg",
                 "location": "Seattle, WA",
                 "salary": "$75,000 - $95,000",
+                 "website": "https://www.aboutamazon.com/",
                 "jobType": "Full-time",
                 "description": "Analyze and optimize Amazon's global supply chain operations.",
                 "requirements": [
@@ -148,6 +156,7 @@
                 "bannerImage": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/wethinkbig/hero/v2/WETB_hero_business_analyst_desktop_2x._CB635488941_.jpg",
                 "location": "Austin, TX",
                 "salary": "$85,000 - $110,000",
+                 "website": "https://www.aboutamazon.com/",
                 "jobType": "Full-time",
                 "description": "Analyze business needs and provide data-driven recommendations for process improvement.",
                 "requirements": [

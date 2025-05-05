@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { CompaniesContext } from "../Store/Context/CompaniesContext";
-import { Link, useParams } from "react-router-dom";
+import { Link,  useParams } from "react-router-dom";
 import { Grid2X2, LayoutList, ExternalLink, ArrowRight, X } from "lucide-react";
 import { toast } from "react-toastify";
 import JobDetailsModal from "../Components/JobDetailsModal";
@@ -11,12 +11,12 @@ const DetailsPage = () => {
   const { Id } = useParams();
   const [viewType, setViewType] = useState("list");
   const [selectedJob, setSelectedJob] = useState(null);
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
-
   const findCompanyById = (id) => {
     return data.find((company) => company.id === id);
   };
   const company = findCompanyById(Id || "");
+
+  
 
   if (!company) {
     return (
@@ -37,24 +37,6 @@ const DetailsPage = () => {
     );
   }
 
-  const handleOpenJobDetails = (job) => {
-    setSelectedJob(job);
-    setIsDialogOpen(true);
-  };
-
-  const handleCloseJobDetails = () => {
-    setSelectedJob(null);
-    setIsDialogOpen(false);
-  };
-
-  const handleApply = () => {
-    if (selectedJob) {
-      window.open(selectedJob.applyUrl, "_blank", "noopener,noreferrer");
-      toast.success("Opening application page", {
-        description: "Good luck with your application!",
-      });
-    }
-  };
   return (
     <div className="container mx-auto py-10 px-4 md:px-6">
       {/* Company Details */}
@@ -76,9 +58,6 @@ const DetailsPage = () => {
               <span className="badge bg-[#F3E8FF] text-blue-900  ">
                 {company?.location}
               </span>
-              <span className="badge bg-[#DCFCE7] text-red-900  ">
-                Founded {company?.foundedYear}
-              </span>
             </div>
           </div>
         </div>
@@ -87,7 +66,7 @@ const DetailsPage = () => {
           <h2 className="text-xl font-semibold mb-3">About {company?.name}</h2>
           <p className="text-gray-700 mb-6">{company?.description}</p>
 
-          <a
+          <Link
             href={company?.website}
             target="_blank"
             rel="noopener noreferrer"
@@ -95,7 +74,7 @@ const DetailsPage = () => {
           >
             Visit website
             <ExternalLink className="ml-1 h-4 w-4" />
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -140,12 +119,14 @@ const DetailsPage = () => {
             }`}
           >
             {company.jobs.map((job) => (
-              <JobCard key={job.id} job={job} onClick={setSelectedJob} />
+              <>
+                <JobCard key={job.id} job={job} onClick={setSelectedJob} />
+              </>
             ))}
             <JobDetailsModal
               job={selectedJob}
               onClose={() => setSelectedJob(null)}
-              onApply={() => alert("Apply clicked")}
+              url={company.website}
             />
           </div>
         )}
