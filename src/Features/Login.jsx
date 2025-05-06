@@ -89,9 +89,9 @@ const Login = () => {
               placeholder="Password"
             />
             <div>
-              <aL onClick={handleReset} className="link link-hover">
+              <a onClick={handleReset} className="link link-hover">
                 Forgot password?
-              </aL>
+              </a>
             </div>
             <br />
             <p>
