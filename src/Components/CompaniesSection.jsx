@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { useContext, useEffect, useState } from "react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
-import { LoaderContext } from "../Store/Context/LocaderContext";
+import { Link,  useNavigate } from "react-router-dom";
 import { CompaniesContext } from "../Store/Context/CompaniesContext";
+import { Atom } from "react-loading-indicators";
 
 const container = {
   hidden: {},
@@ -20,20 +20,20 @@ const item = {
 
 const CompaniesSection = () => {
   const { data } = useContext(CompaniesContext);
-  const { setIsLoading, isLoading } = useContext(LoaderContext);
+  const [isLoading, setIsLoading] = useState(true);
   const [companies, setCompanies] = useState([]);
   const [error, setError] = useState(null);
-const navigate = useNavigate();
+  const navigate = useNavigate();
   useEffect(() => {
     try {
-      setIsLoading(true)
+      setIsLoading(true);
       setCompanies(data.slice(0, 4));
     } catch (error) {
-      setError(error.message)
-    }finally{
-      setIsLoading(false)
+      setError(error.message);
+    } finally {
+      setIsLoading(false);
     }
-  }, [setCompanies, data, setIsLoading]);
+  }, [data]);
 
   if (isLoading) {
     return (
@@ -41,8 +41,7 @@ const navigate = useNavigate();
         <Atom
           color={["#00FFFF", "#B0E0E6", "#ADD8E6", "#FFFFFF"]}
           size="large"
-          text=""
-          textColor=""
+         
         />
       </div>
     );
@@ -52,9 +51,9 @@ const navigate = useNavigate();
     return <div>Error: {error}</div>;
   }
 
-  const handleNavigateIntoDetailsPage= (company) => {
-    navigate(`/companies/details/${company?.name}/${company?.id}`)
-  }
+  const handleNavigateIntoDetailsPage = (company) => {
+    navigate(`/companies/details/${company?.name}/${company?.id}`);
+  };
 
   return (
     <section className="py-16">
@@ -85,12 +84,12 @@ const navigate = useNavigate();
         >
           {companies.map((company) => (
             <motion.div
-            onClick={()=>handleNavigateIntoDetailsPage(company)}
+              onClick={() => handleNavigateIntoDetailsPage(company)}
               key={company.id}
               variants={item}
               className="bg-white rounded-xl p-6 shadow-md flex flex-col items-center text-center hover:shadow-lg transition-all duration-300"
             >
-              <Link >
+              <Link>
                 <div className="w-24 h-24 mb-4 flex items-center justify-center bg-gray-200 rounded-full">
                   <img
                     src={`${company?.logo}`}

@@ -1,32 +1,36 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { Outlet, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import Snowfall from "react-snowfall";
 import { ToastContainer } from "react-toastify";
-import { LoaderContext } from "../Store/Context/LocaderContext";
 import { Atom } from "react-loading-indicators";
+import ScrollToTop from "../Components/ScrollToTop";
 
 const MainLayout = () => {
-  const { isLoading, setIsLoading } = useContext(LoaderContext);
-
+  const [isLoading, setIsLoading] = useState(true);
+const [isRouterLoader, setIsRouteLoading] = useState(false)
   const location = useLocation();
 
   useEffect(() => {
-    setIsLoading(true)
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    setIsLoading(true);
     const timing = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
 
     return () => clearTimeout(timing);
-  }, [location, setIsLoading]);
+  }, []);
+
+
+  useEffect(() => {
+    setIsRouteLoading(true);
+    const timer = setTimeout(() => setIsRouteLoading(false), 200);
+    return () => clearTimeout(timer);
+  }, [location]);
   return (
     <>
+     <ScrollToTop />
       {isLoading ? (
         <div className="flex justify-center items-center h-screen">
           <Atom
@@ -55,13 +59,12 @@ const MainLayout = () => {
             </motion.header>
 
             <main className="minHight relative z-10">
-              {isLoading ? (
-                <div className="flex justify-center items-center">
+              {isRouterLoader ? (
+                <div className="flex justify-center items-center minHight">
                   <Atom
                     color={["#00FFFF", "#B0E0E6", "#ADD8E6", "#FFFFFF"]}
                     size="large"
-                    text=""
-                    textColor=""
+
                   />
                 </div>
               ) : (

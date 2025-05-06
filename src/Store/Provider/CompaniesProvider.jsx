@@ -1,17 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
 import { CompaniesContext } from "../Context/CompaniesContext";
-import { LoaderContext } from "../Context/LocaderContext";
 import { toast } from "react-toastify";
 
 const CompaniesProvider = ({ children }) => {
-    const [data, setAllData] = useState([]);
-  const { isLoading, setIsLoading } = useContext(LoaderContext);
+  const [data, setAllData] = useState([]);
+  const [isLoading, setIsLoading] = useState();
 
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
     const fetchData = async () => {
       try {
         setIsLoading(true);
@@ -25,15 +20,19 @@ const CompaniesProvider = ({ children }) => {
       }
     };
     fetchData();
-  }, [setIsLoading]);
+  }, []);
 
   const companyData = {
     isLoading,
     setIsLoading,
     data,
-    setAllData
+    setAllData,
   };
-  return <CompaniesContext.Provider value={companyData}>{children}</CompaniesContext.Provider>;
+  return (
+    <CompaniesContext.Provider value={companyData}>
+      {children}
+    </CompaniesContext.Provider>
+  );
 };
 
 export default CompaniesProvider;

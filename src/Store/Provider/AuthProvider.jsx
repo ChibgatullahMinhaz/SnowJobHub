@@ -1,4 +1,4 @@
-import React, { use, useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   createUserWithEmailAndPassword,
   GoogleAuthProvider,
@@ -9,13 +9,12 @@ import {
   signOut,
 } from "firebase/auth";
 import { toast } from "react-toastify";
-import { LoaderContext } from "../Context/LocaderContext";
 import { AuthContext } from "../Context/AuthContext";
 import { auth } from "../../Utilities/firebase.init";
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const { isLoading, setIsLoading } = useContext(LoaderContext);
+  const [isLoading, setIsLoading] = useState(true)
 
   const createUser = (email, password) => {
     setIsLoading(true);

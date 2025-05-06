@@ -12,6 +12,7 @@ import DetailsPage from "../Pages/DetailsPage";
 import PrivetRoute from "./PrivetRoute";
 import ResetPassword from "../Components/ResetPassword";
 import MyProfile from "../Pages/MyProfile";
+import Contact from "../Pages/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
       {
         path: "/about",
         element: <About></About>,
+      },
+      {
+        path: "/Contact",
+        element: <Contact></Contact>,
       },
       {
         path: "/companies/details/:name/:Id",

@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useContext, useEffect, useState } from "react";
 import { Atom } from "react-loading-indicators";
-import { LoaderContext } from "../Store/Context/LocaderContext";
 import { toast } from "react-toastify";
 
 const container = {
@@ -19,7 +18,7 @@ const item = {
 };
 
 const HowItWorks = () => {
-  const { isLoading, setIsLoading } = useContext(LoaderContext);
+  const [isLoading, setIsLoading] = useState(true)
 
   const [stepsData, setStepsData] = useState([]);
   const [error, setError] = useState(null);
@@ -42,7 +41,7 @@ const HowItWorks = () => {
     };
 
     fetchData();
-  }, [setIsLoading]);
+  }, []);
 
   if (isLoading) {
     return (
