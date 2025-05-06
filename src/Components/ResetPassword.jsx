@@ -26,8 +26,8 @@ const ResetPassword = () => {
         `Password reset email sent to ${email}. Please check your inbox.`
       );
       setIsEmailSent(true);
-      const mailToLink = `mailto:${email}?subject=Reset Password&body=Please follow the instructions to reset your password.`;
-      window.open(mailToLink, "_blank");
+      window.open("https://mail.google.com/mail/u/0/#inbox", "_blank");
+
     } catch (error) {
       let errorMessage = "Failed to send password reset email.";
       switch (error.code) {

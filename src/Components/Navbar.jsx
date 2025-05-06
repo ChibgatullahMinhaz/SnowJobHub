@@ -72,7 +72,7 @@ const Navbar = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content rounded-box z-10 mt-3 w-52 p-2 shadow space-y-2"
+                className="menu menu-sm bg-base-200 dropdown-content rounded-box z-10 mt-3 w-52 p-2 shadow space-y-2"
               >
                 {navLinks.map((link, idx) => (
                   <li key={idx}>
