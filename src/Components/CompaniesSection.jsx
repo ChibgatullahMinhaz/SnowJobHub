@@ -20,37 +20,8 @@ const item = {
 
 const CompaniesSection = () => {
   const { data } = useContext(CompaniesContext);
-  const [isLoading, setIsLoading] = useState(true);
-  const [companies, setCompanies] = useState([]);
-  const [error, setError] = useState(null);
   const navigate = useNavigate();
-  useEffect(() => {
-    try {
-      setIsLoading(true);
-      setCompanies(data.slice(0, 4));
-    } catch (error) {
-      setError(error.message);
-    } finally {
-      setIsLoading(false);
-    }
-  }, [data]);
-
-  if (isLoading) {
-    return (
-      <div className="flex justify-center items-center">
-        <Atom
-          color={["#00FFFF", "#B0E0E6", "#ADD8E6", "#FFFFFF"]}
-          size="large"
-         
-        />
-      </div>
-    );
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
+ 
   const handleNavigateIntoDetailsPage = (company) => {
     navigate(`/companies/details/${company?.name}/${company?.id}`);
   };
@@ -82,7 +53,7 @@ const CompaniesSection = () => {
           viewport={{ once: true }}
           className="grid grid-cols-2 md:grid-cols-4 gap-8 cursor-pointer"
         >
-          {companies.map((company) => (
+          {data.map((company) => (
             <motion.div
               onClick={() => handleNavigateIntoDetailsPage(company)}
               key={company.id}
