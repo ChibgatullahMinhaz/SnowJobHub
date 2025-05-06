@@ -107,7 +107,7 @@ const Navbar = () => {
               <div className="flex gap-x-1.5 items-center">
                 <img
                   onClick={handleUserProfile}
-                  className="h-10 w-10 rounded-full"
+                  className="h-10 w-10 rounded-full cursor-pointer"
                   src={user?.photoURL}
                   alt={user?.displayName}
                 />
@@ -132,7 +132,7 @@ const Navbar = () => {
               <div className="flex gap-x-1.5 items-center">
                 <img
                   onClick={handleUserProfile}
-                  className="h-10 w-10 rounded-full"
+                  className="h-14 w-14 rounded-full cursor-pointer"
                   src={user?.photoURL}
                   alt={user?.displayName}
                 />

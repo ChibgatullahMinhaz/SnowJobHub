@@ -12,7 +12,6 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
-  
 
   const handleSingIn = (e) => {
     e.preventDefault();
@@ -37,11 +36,8 @@ const Login = () => {
   };
 
   const handleReset = () => {
-    navigate('/resetPassword', { state: { email } })
+    navigate("/resetPassword", { state: { email } });
   };
-
-
-
 
   // login with google
   const provider = new GoogleAuthProvider();
@@ -72,6 +68,12 @@ const Login = () => {
           className="card-body"
         >
           <form className="fieldset" onSubmit={handleSingIn}>
+            <h1 className="text-2xl text-gray-700 text-center font-bold">
+              Please <span className="text-blue-400">Login</span>{" "}
+            </h1>
+            <small className="text-center text-gray-700 font-semibold">
+              with SnowJobHub
+            </small>
             <label className="label">Email</label>
             <input
               type="email"
@@ -104,12 +106,29 @@ const Login = () => {
                 SingUp
               </Link>{" "}
             </p>
-            <button type="submit" className="btn btn-neutral mt-4">
-              Login
-            </button>
+
+            <motion.div
+              className=" text-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.9 }}
+            >
+              <button
+                type="submit"
+                className="relative btn  mt-4 px-6 py-2 border w-full border-blue-500 text-blue-500 rounded-full overflow-hidden group transition-all duration-300 cursor-pointer"
+              >
+                <span className="absolute w-0 h-full left-0 top-0 bg-blue-500 transition-all duration-300 ease-in-out group-hover:w-full z-0"></span>
+                <span className="relative z-10 group-hover:text-white transition-all duration-300">
+                  Login
+                </span>
+              </button>
+            </motion.div>
           </form>
           <p className="text-center">Or</p>
-          <button
+          <motion.button
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.9 }}
             className="btn bg-white text-black border-[#e5e5e5]"
             onClick={handleLoginWithGoogle}
           >
@@ -141,7 +160,7 @@ const Login = () => {
               </g>
             </svg>
             Login with Google
-          </button>
+          </motion.button>
         </motion.div>
       </div>
     </>

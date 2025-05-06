@@ -7,8 +7,8 @@ import { Helmet } from "react-helmet";
 import { AuthContext } from "../Store/Context/AuthContext";
 
 const SingUp = () => {
-    // const { , userLogin } = useContext(AuthContext);
-  
+  // const { , userLogin } = useContext(AuthContext);
+
   const { createUser, creteUserWithGoogle } = useContext(AuthContext);
   const navigate = useNavigate();
   const handleCreateAccount = (e) => {
@@ -29,25 +29,26 @@ const SingUp = () => {
           displayName: name,
           photoURL: photo,
         });
-        navigate("/login");
+        toast.success("Account Create Successfully");
+        navigate("/");
       })
       .catch((error) => {
         toast.warning("You have Already an Account! Please Login");
       });
   };
 
-   // login with google
-    const provider = new GoogleAuthProvider();
-    const handleLoginWithGoogle = () => {
-      creteUserWithGoogle(provider)
-        .then((result) => {
-          toast.success("User Login Successfully");
-          navigate(location?.state || "/");
-        })
-        .catch((error) => {
-          toast.warning(error);
-        });
-    };
+  // login with google
+  const provider = new GoogleAuthProvider();
+  const handleLoginWithGoogle = () => {
+    creteUserWithGoogle(provider)
+      .then((result) => {
+        toast.success("User Login Successfully");
+        navigate(location?.state || "/");
+      })
+      .catch((error) => {
+        toast.warning(error);
+      });
+  };
   return (
     <>
       <Helmet>
@@ -65,6 +66,12 @@ const SingUp = () => {
           className="card-body"
         >
           <form className="fieldset" onSubmit={handleCreateAccount}>
+            <h1 className="text-2xl text-gray-700 text-center font-bold">
+              Create an <span className="text-blue-400">Account</span>{" "}
+            </h1>
+            <small className="text-center text-blue-700 font-semibold">
+              with SnowJobHub
+            </small>
             <label className="label">Name</label>
             <input
               type="text"
@@ -183,13 +190,28 @@ const SingUp = () => {
                 Login
               </Link>{" "}
             </p>
-            <button type="submit" className="btn btn-neutral mt-4">
-              Create Account
-            </button>
-
+            <motion.div
+              className=" text-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.9 }}
+            >
+              <button
+                type="submit"
+                className="relative btn  mt-4 px-6 py-2 border w-full border-blue-500 text-blue-500 rounded-full overflow-hidden group transition-all duration-300 cursor-pointer"
+              >
+                <span className="absolute w-0 h-full left-0 top-0 bg-blue-500 transition-all duration-300 ease-in-out group-hover:w-full z-0"></span>
+                <span className="relative z-10 group-hover:text-white transition-all duration-300">
+                  Create Account
+                </span>
+              </button>
+            </motion.div>
           </form>
-            <p className="text-center">Or</p>
-          <button
+          <p className="text-center">Or</p>
+          <motion.button
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.9 }}
             className="btn bg-white text-black border-[#e5e5e5]"
             onClick={handleLoginWithGoogle}
           >
@@ -221,9 +243,7 @@ const SingUp = () => {
               </g>
             </svg>
             Login with Google
-          </button>
-
-          
+          </motion.button>
         </motion.div>
       </div>
     </>
