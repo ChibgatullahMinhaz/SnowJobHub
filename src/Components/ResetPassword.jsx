@@ -13,7 +13,7 @@ const ResetPassword = () => {
     e.preventDefault();
     const email = emailRef.current.value;
 
-    if (!email) {
+    if (!email.trim()) {
       toast.error("Please enter your email address.");
       return;
     }
@@ -22,23 +22,24 @@ const ResetPassword = () => {
       await sendPasswordResetEmail(auth, email);
       toast.success(`Password reset email sent to ${email}. Please check your inbox.`);
       setIsEmailSent(true);
-     
-      setTimeout(() => {
-        navigate('https://mail.google.com/mail/u/0/#inbox');
-      }, 300);
+
+      // Open Gmail in a new tab to compose the email
+      const mailToLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=Password%20Reset%20Request&body=Please%20reset%20my%20password.`;
+      window.open(mailToLink, '_blank'); 
     } catch (error) {
       let errorMessage = "Failed to send password reset email.";
       switch (error.code) {
-        case 'auth/invalid-email':
+        case "auth/invalid-email":
           errorMessage = "Invalid email address.";
           break;
-        case 'auth/user-not-found':
+        case "auth/user-not-found":
           errorMessage = "There is no user record corresponding to this email.";
           break;
         default:
           console.error("Password reset error:", error.code, error.message);
       }
       toast.error(errorMessage);
+      console.log(error);
     }
   };
 
@@ -64,10 +65,9 @@ const ResetPassword = () => {
               <input
                 ref={emailRef}
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="email"
                 type="email"
-                placeholder="Your email"
                 required
+                placeholder="Your email"
                 autoComplete="email"
               />
             </div>
@@ -80,7 +80,9 @@ const ResetPassword = () => {
               </button>
               <button
                 className="inline-block align-baseline font-semibold text-sm text-blue-500 hover:text-blue-800"
-                onClick={() => navigate('/login')} // Assuming you have a login route
+                onClick={() =>
+                  navigate("/login")
+                }
               >
                 Back to Login
               </button>

@@ -13,6 +13,7 @@ import PrivetRoute from "./PrivetRoute";
 import ResetPassword from "../Components/ResetPassword";
 import MyProfile from "../Pages/MyProfile";
 import Contact from "../Pages/Contact";
+import UpdateProfile from "../Pages/UpdateProfile";
 
 export const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ export const router = createBrowserRouter([
       {
         path: "/companies/details/:name/:Id",
         element: <DetailsPage></DetailsPage>,
+      },
+      {
+        path: "/use/updateProfile",
+        element:  <PrivetRoute> <UpdateProfile></UpdateProfile> </PrivetRoute>,
       },
       {
         path: "/companies",

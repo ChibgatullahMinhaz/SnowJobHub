@@ -20,9 +20,7 @@ export default function MyProfile() {
   const { user, logout } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
-  useEffect(() => {
-    document.title = "User Profile | snowjobhub";
-  }, []);
+
   const handleSingout = () => {
     logout()
       .then(() => {
@@ -32,6 +30,10 @@ export default function MyProfile() {
       .catch((error) => {
         toast.error(error.message);
       });
+  };
+
+  const handleUpdate = () => {
+    navigate("/use/updateProfile");
   };
 
   return (
@@ -78,14 +80,32 @@ export default function MyProfile() {
           </p>
         </motion.div>
       </motion.div>
-      <motion.div className="mt-6 text-center">
+
+      <motion.div className="mt-6 flex justify-center gap-4 flex-wrap">
         <motion.button
           onClick={handleSingout}
+          whileTap={{ scale: 0.95 }}
+          whileHover={{
+            scale: 1.05,
+            borderColor: "#3b82f6",
+            cursor: "pointer",
+          }}
+          className="relative px-6 py-2 border border-blue-500 text-blue-500 rounded-full overflow-hidden group transition-all duration-300"
+        >
+          <span className="absolute w-0 h-full left-0 top-0 bg-blue-500 transition-all duration-300 ease-in-out group-hover:w-full z-0"></span>
+          <span className="relative z-10 group-hover:text-white transition-all duration-300">
+            {" "}
+            ❄️ Logout
+          </span>
+        </motion.button>
+
+        <motion.button
+          onClick={handleUpdate}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-gradient-to-r from-blue-200 to-blue-400 hover:from-blue-300 hover:to-blue-500 text-white font-semibold py-2 px-6 rounded-full shadow-md transition-all duration-300"
+          className="bg-gradient-to-r from-green-200 to-green-400 hover:from-green-300 hover:to-green-500 text-white font-semibold py-2 px-6 rounded-full shadow-md transition-all duration-300"
         >
-          ❄️ Logout
+          ✏️ Update Info
         </motion.button>
       </motion.div>
     </motion.div>
