@@ -156,13 +156,13 @@ const SingUp = () => {
                 required
                 name="password"
                 placeholder="Password"
-                minlength="8"
+                minLength="6"
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
                 title="Must be more than 6 characters, including number, lowercase letter, uppercase letter"
               />
             </label>
             <p className="validator-hint hidden">
-              Must be more than 8 characters, including
+              Must be more than 6 characters, including
               <br />
               At least one number <br />
               At least one lowercase letter <br />
