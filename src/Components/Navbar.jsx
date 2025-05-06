@@ -1,6 +1,6 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import Logo from "./Logo";
-import { Link, NavLink, useNavigate } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Store/Context/AuthContext";
 import { motion } from "framer-motion";
 
@@ -14,12 +14,36 @@ const item = {
   hidden: { opacity: 0, x: -100 },
 };
 
+const navLinks = [
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+  { name: "Jobs", path: "/Jobs" },
+  { name: "Contact", path: "/Contact" },
+];
+
+const AnimatedLink = ({ to, children }) => (
+  <motion.div
+    whileHover={{ scale: 1.05,  }}
+    className="relative px-4 py-2 border border-blue-500 text-blue-500 rounded-full overflow-hidden group transition-all duration-300"
+  >
+    <span className="absolute w-0 h-full left-0 top-0 bg-blue-500 transition-all duration-300 ease-in-out group-hover:w-full z-0"></span>
+    <NavLink
+      to={to}
+      className="relative z-10 group-hover:text-white transition-all duration-300"
+    >
+      {children}
+    </NavLink>
+  </motion.div>
+);
+
 const Navbar = () => {
-  const { user, isLoading, setIsLoading } = useContext(AuthContext);
+  const { user, isLoading } = useContext(AuthContext);
   const navigate = useNavigate();
+
   const handleUserProfile = () => {
     navigate(`/user/${user.displayName}/Profile`);
   };
+
   return (
     <>
       {!isLoading && (
@@ -38,46 +62,35 @@ const Navbar = () => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  {" "}
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M4 6h16M4 12h8m-8 6h16"
-                  />{" "}
+                  />
                 </svg>
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow  space-y-2"
+                className="menu menu-sm dropdown-content rounded-box z-10 mt-3 w-52 p-2 shadow space-y-2"
               >
-                <li>
-                  <NavLink to={`/`}>Home</NavLink>
-                </li>
-                <li>
-                  <NavLink to={`/about`}>about</NavLink>
-                </li>
-                <li>
-                  <NavLink to={`/Jobs`}>Jobs</NavLink>
-                </li>
-                <li>
-                  <NavLink to={`/Contact`}>Contact</NavLink>
-                </li>
-
+                {navLinks.map((link, idx) => (
+                  <li key={idx}>
+                    <AnimatedLink to={link.path}>{link.name}</AnimatedLink>
+                  </li>
+                ))}
                 {!user && (
                   <div className="action flex flex-col gap-y-3">
                     <Link
-                      className=" btn bg-[#1976D2] hover:bg-[#1565C0] text-white "
+                      className="btn bg-[#1976D2] hover:bg-[#1565C0] text-white"
                       to={`/login`}
                     >
-                      {" "}
                       Login
                     </Link>
                     <Link
-                      className=" btn bg-[#64B5F6] hover:bg-[#42A5F5] text-white "
+                      className="btn bg-[#64B5F6] hover:bg-[#42A5F5] text-white"
                       to={`/SingUp`}
                     >
-                      {" "}
                       SingUp
                     </Link>
                   </div>
@@ -85,10 +98,11 @@ const Navbar = () => {
               </ul>
             </div>
             <Link to={`/`}>
-              <Logo></Logo>
+              <Logo />
             </Link>
           </div>
-          <div className="navbar-end  lg:hidden">
+
+          <div className="navbar-end lg:hidden">
             {user && (
               <div className="flex gap-x-1.5 items-center">
                 <img
@@ -100,29 +114,24 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <div className="navbar-end hidden lg:flex">
+
+          <div className="navbar-end hidden lg:flex items-center gap-x-4">
             <motion.ul
-              className="menu menu-horizontal px-3 space-x-3"
+              className="flex gap-x-4"
               initial="hidden"
               whileInView="visible"
               variants={list}
             >
-              <motion.li variants={item}>
-                <NavLink to={`/`}>Home</NavLink>
-              </motion.li>
-              <motion.li variants={item}>
-                <NavLink to={`/about`}>about</NavLink>
-              </motion.li>
-              <motion.li variants={item}>
-                <NavLink to={`/Jobs`}>Jobs</NavLink>
-              </motion.li>
-              <motion.li variants={item}>
-                <NavLink to={`/Contact`}>Contact</NavLink>
-              </motion.li>
+              {navLinks.map((link, idx) => (
+                <motion.li key={idx} variants={item}>
+                  <AnimatedLink to={link.path}>{link.name}</AnimatedLink>
+                </motion.li>
+              ))}
             </motion.ul>
             {user ? (
               <div className="flex gap-x-1.5 items-center">
-                <img onClick={handleUserProfile}
+                <img
+                  onClick={handleUserProfile}
                   className="h-10 w-10 rounded-full"
                   src={user?.photoURL}
                   alt={user?.displayName}
@@ -131,13 +140,13 @@ const Navbar = () => {
             ) : (
               <div className="action flex gap-x-3.5">
                 <Link
-                  className=" btn bg-[#1976D2] hover:bg-[#1565C0] text-white "
+                  className="btn bg-[#1976D2] hover:bg-[#1565C0] text-white"
                   to={`/login`}
                 >
                   Login
                 </Link>
                 <Link
-                  className=" btn bg-[#64B5F6] hover:bg-[#42A5F5] text-white "
+                  className="btn bg-[#64B5F6] hover:bg-[#42A5F5] text-white"
                   to={`/SingUp`}
                 >
                   SingUp
