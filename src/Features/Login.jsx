@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { Link, Navigate, useLocation, useNavigate } from "react-router";
 import { GoogleAuthProvider } from "firebase/auth";
 import { toast } from "react-toastify";
@@ -9,6 +9,7 @@ import { Helmet } from "react-helmet";
 const Login = () => {
   const emailRef = useRef();
   const { creteUserWithGoogle, userLogin } = useContext(AuthContext);
+  const [email, setEmail] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
   
@@ -36,8 +37,11 @@ const Login = () => {
   };
 
   const handleReset = () => {
-    navigate('/resetPassword')
+    navigate('/resetPassword', { state: { email } })
   };
+
+
+
 
   // login with google
   const provider = new GoogleAuthProvider();
@@ -75,7 +79,7 @@ const Login = () => {
               className="input"
               placeholder="Email"
               autoComplete="email"
-              
+              onChange={(e) => setEmail(e.target.value)}
             />
             <label className="label">Password</label>
             <input

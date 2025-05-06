@@ -2,10 +2,12 @@ import { sendPasswordResetEmail } from "firebase/auth";
 import React, { useRef, useState } from "react";
 import { toast } from "react-toastify";
 import { auth } from "../Utilities/firebase.init";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const ResetPassword = () => {
   const emailRef = useRef();
+  const location = useLocation();
+  const emailFromLogin = location.state?.email || "";
   const [isEmailSent, setIsEmailSent] = useState(false);
   const navigate = useNavigate();
 
@@ -64,6 +66,7 @@ const ResetPassword = () => {
               </label>
               <input
                 ref={emailRef}
+                defaultValue={emailFromLogin}
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="email"
                 required
@@ -79,6 +82,7 @@ const ResetPassword = () => {
                 Send Reset Link
               </button>
               <button
+                type="button"
                 className="inline-block align-baseline font-semibold text-sm text-blue-500 hover:text-blue-800"
                 onClick={() => navigate("/login")}
               >
