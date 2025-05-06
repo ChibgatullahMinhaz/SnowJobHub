@@ -82,12 +82,15 @@ First, clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/programming-hero-web-course1/b11a9-react-authentication-ChibgatullahMinhaz.git
-cd (project folder)
+cd b11a9-react-authentication-ChibgatullahMinhaz
 ```
 
 ### 2. Install Dependencies
 
 Next, install the required dependencies using npm:
+```bash
+npm install  --legacy-peer-deps
+```
  ### 3. Set Up Firebase Configuration
 Create a .env file in the root directory and add your Firebase configuration keys like this:
  
@@ -116,4 +119,3 @@ npm run dev
 [Chibtaullah Minhaz] – Front-End Developer
 
 ---
-```
