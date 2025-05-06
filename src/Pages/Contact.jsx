@@ -48,8 +48,13 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.9 }}
         >
-          <button className="bg-blue-500 text-white px-6 py-2 rounded-full shadow-lg hover:bg-blue-600 transition-all">
-            ❄️ Send Message
+          <button className="relative px-6 py-2 border border-blue-500 text-blue-500 rounded-full overflow-hidden group transition-all duration-300 cursor-pointer">
+           
+
+            <span className="absolute w-0 h-full left-0 top-0 bg-blue-500 transition-all duration-300 ease-in-out group-hover:w-full z-0"></span>
+          <span className="relative z-10 group-hover:text-white transition-all duration-300">
+          ❄️ Send Message
+          </span>
           </button>
         </motion.div>
       </motion.div>
