@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Helmet } from "react-helmet";
 import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
 import { ArrowLeft, Home } from "lucide-react";
@@ -23,6 +23,15 @@ const ErrorLayout = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-slate-900 to-slate-800 text-white p-4">
+        <Helmet>
+        <title>SnowJobHub || Error page</title>
+        <meta name="description" content="This is SnowJobHub" />
+        <meta
+          name="keywords"
+          content="React, SnowJobHub
+, error"
+        />
+      </Helmet>
       <div className="w-full max-w-3xl text-center">
         <div className="mb-8">
           <AstronautAnimation />

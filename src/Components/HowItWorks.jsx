@@ -46,7 +46,7 @@ const HowItWorks = () => {
   if (isLoading) {
     return (
       <div className="flex justify-center items-center">
-        <Atom color="#32cd32" size="large" text="" textColor="" />
+        <Atom color="#32cd32" size="large" />
       </div>
     );
   }

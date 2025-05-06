@@ -116,3 +116,4 @@ const AstronautAnimation = () => {
 };
 
 export default AstronautAnimation;
+

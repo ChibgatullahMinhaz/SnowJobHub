@@ -12,7 +12,6 @@ const Hero = () => {
   return (
     <div className="relative z-10 overflow-hidden bg-gradient-to-b from-white via-[#f3f2fb] to-white">
       
-      {/* Decorative elements */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float z-0"></div>
       <div className="absolute bottom-10 right-10 w-64 h-64 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float z-0"></div>
 

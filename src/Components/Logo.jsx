@@ -1,5 +1,4 @@
 import { FaBriefcase } from "react-icons/fa";
-import { FaSnowflake } from "react-icons/fa";
 
 const Logo = () => (
   <div className="logo flex gap-x-2 items-center">

@@ -20,12 +20,12 @@ const ResetPassword = () => {
 
     try {
       await sendPasswordResetEmail(auth, email);
-      toast.success(`Password reset email sent to ${email}. Please check your inbox.`);
+      toast.success(
+        `Password reset email sent to ${email}. Please check your inbox.`
+      );
       setIsEmailSent(true);
-
-      // Open Gmail in a new tab to compose the email
-      const mailToLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=Password%20Reset%20Request&body=Please%20reset%20my%20password.`;
-      window.open(mailToLink, '_blank'); 
+      const mailToLink = `mailto:${email}?subject=Reset Password&body=Please follow the instructions to reset your password.`;
+      window.open(mailToLink, "_blank");
     } catch (error) {
       let errorMessage = "Failed to send password reset email.";
       switch (error.code) {
@@ -80,9 +80,7 @@ const ResetPassword = () => {
               </button>
               <button
                 className="inline-block align-baseline font-semibold text-sm text-blue-500 hover:text-blue-800"
-                onClick={() =>
-                  navigate("/login")
-                }
+                onClick={() => navigate("/login")}
               >
                 Back to Login
               </button>

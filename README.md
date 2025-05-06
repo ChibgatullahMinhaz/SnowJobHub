@@ -107,7 +107,6 @@ VITE_APP_ID=your_app_id
 Start the development server by running:
 ```bash
 npm run dev
-
 ```
 
 

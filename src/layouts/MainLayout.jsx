@@ -7,6 +7,7 @@ import Snowfall from "react-snowfall";
 import { ToastContainer } from "react-toastify";
 import { Atom } from "react-loading-indicators";
 import ScrollToTop from "../Components/ScrollToTop";
+import { Helmet } from "react-helmet";
 
 const MainLayout = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,6 +31,15 @@ const [isRouterLoader, setIsRouteLoading] = useState(false)
   }, [location]);
   return (
     <>
+      <Helmet>
+        <title>SnowJobHub || Home page</title>
+        <meta name="description" content="This is SnowJobHub" />
+        <meta
+          name="keywords"
+          content="React, SnowJobHub
+, jobs"
+        />
+      </Helmet>
      <ScrollToTop />
       {isLoading ? (
         <div className="flex justify-center items-center h-screen">

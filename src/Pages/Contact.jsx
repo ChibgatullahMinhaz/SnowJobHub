@@ -1,9 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-100 py-16 px-6">
+  <Helmet>
+        <title>SnowJobHub - Contact Page</title>
+        <meta name="description" content="This is SnowJobHub" />
+        <meta
+          name="contact"
+          content="React, SnowJobHub
+, contact"
+        />
+      </Helmet>
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}

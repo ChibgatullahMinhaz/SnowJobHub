@@ -5,6 +5,7 @@ import { Grid2X2, LayoutList, ExternalLink, ArrowRight, X } from "lucide-react";
 import { toast } from "react-toastify";
 import JobDetailsModal from "../Components/JobDetailsModal";
 import JobCard from "../Components/JobCard";
+import { Helmet } from "react-helmet";
 
 const DetailsPage = () => {
   const { data } = useContext(CompaniesContext);
@@ -38,7 +39,17 @@ const DetailsPage = () => {
   }
 
   return (
+
     <div className="container mx-auto py-10 px-4 md:px-6">
+        <Helmet>
+        <title>SnowJobHub || Company Details page</title>
+        <meta name="description" content="This is SnowJobHub" />
+        <meta
+          name="snowjobhub"
+          content="React, SnowJobHub
+, company details"
+        />
+      </Helmet>
       {/* Company Details */}
       <div className="mb-12">
         <div className="flex flex-col md:flex-row items-start md:items-center gap-6 mb-6">

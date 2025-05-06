@@ -22,7 +22,7 @@ const Footer = () => {
             <li><Link to="/" className="hover:text-[#1976D2] text-[#EEF6FB]">Home</Link></li>
             <li><Link to="/about" className=" hover:text-[#1976D2] text-slate-300">About</Link></li>
             <li><Link to="/jobs" className=" hover:text-[#1976D2] text-slate-300">Jobs</Link></li>
-            <li><Link to="/contact" className=" hover:text-[#1976D2] text-slate-300">Contact</Link></li>
+            <li><Link to="/Contact" className=" hover:text-[#1976D2] text-slate-300">Contact</Link></li>
           </ul>
         </div>
 
@@ -32,7 +32,7 @@ const Footer = () => {
           <ul className="space-y-2 ">
             <li><Link to="/login" className="hover:text-[#1976D2] text-slate-300">Login</Link></li>
             <li><Link to="/SingUp" className="hover:text-[#1976D2] text-slate-300">Register</Link></li>
-            <li><Link to="/profile" className="hover:text-[#1976D2] text-slate-300">My Profile</Link></li>
+            <li><Link to="/" className="hover:text-[#1976D2] text-slate-300">My Profile</Link></li>
           </ul>
         </div>
 

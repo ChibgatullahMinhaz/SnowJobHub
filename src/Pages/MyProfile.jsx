@@ -3,6 +3,7 @@ import { useContext, useEffect } from "react";
 import { AuthContext } from "../Store/Context/AuthContext";
 import { toast } from "react-toastify";
 import { useLocation, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const containerVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -37,6 +38,16 @@ export default function MyProfile() {
   };
 
   return (
+<>
+<Helmet>
+        <title>SnowJobHub - updateProfile My Profile</title>
+        <meta name="description" content="This is SnowJobHub updateProfile My Profile" />
+        <meta
+          name="SnowJobHub"
+          content="React, SnowJobHub
+, updateProfile My Profile"
+        />
+      </Helmet>
     <motion.div
       className="min-h-screen px-8 py-12 bg-gradient-to-br from-gray-100 to-white text-gray-800"
       initial="hidden"
@@ -109,5 +120,7 @@ export default function MyProfile() {
         </motion.button>
       </motion.div>
     </motion.div>
+</>
+
   );
 }

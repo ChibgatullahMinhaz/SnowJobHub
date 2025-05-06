@@ -24,12 +24,12 @@ const navLinks = [
 const AnimatedLink = ({ to, children }) => (
   <motion.div
     whileHover={{ scale: 1.05,  }}
-    className="relative px-4 py-2 border border-blue-500 text-blue-500 rounded-full overflow-hidden group transition-all duration-300"
+    className="relative px-4 py-2 border border-blue-500 text-blue-500 rounded-full overflow-hidden group transition-all cursor-pointer duration-300"
   >
     <span className="absolute w-0 h-full left-0 top-0 bg-blue-500 transition-all duration-300 ease-in-out group-hover:w-full z-0"></span>
     <NavLink
       to={to}
-      className="relative z-10 group-hover:text-white transition-all duration-300"
+      className="relative z-10 group-hover:text-white transition-all duration-300 cursor-pointer "
     >
       {children}
     </NavLink>
