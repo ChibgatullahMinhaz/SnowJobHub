@@ -46,9 +46,10 @@ const handleApply = () => {
           <X />
         </button>
 
-        <h3 className="font-bold text-lg mb-2">{job.title}</h3>
+        
         <div className="space-y-2 text-sm">
           <img src={job.bannerImage} alt={job.title} />
+          <h3 className="font-bold text-lg mb-2">{job.title}</h3>
           <p>
             <strong>Location:</strong> {job.location}
           </p>

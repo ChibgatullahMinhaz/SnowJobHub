@@ -28,7 +28,6 @@ const Jobs = () => {
     }
   }, [data, query]);
 
-
   return (
     <div className="flex justify-center flex-col">
       <Helmet>
@@ -57,11 +56,11 @@ const Jobs = () => {
         <Search setQuery={setQuery}></Search>
       </div>
       <div className="grid gap-4 p-4 md:grid-cols-2 lg:grid-cols-3">
-        {allJobs.length > 0 ? (
-          allJobs.map((job) => (
-            <JobCard key={job.id} job={job} onClick={setSelectedJob} />
-          ))
-        ) : (
+        {allJobs.map((job) => (
+          <JobCard key={job.id} job={job} onClick={setSelectedJob} />
+        ))}
+
+        {query.length > 0 && allJobs.length == 0 && (
           <div className="col-span-3">
             <NoJobsFound query={query} />
           </div>
