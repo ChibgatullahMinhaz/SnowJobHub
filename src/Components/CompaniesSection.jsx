@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useContext, useEffect, useState } from "react";
-import { Link,  useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { CompaniesContext } from "../Store/Context/CompaniesContext";
 import { Atom } from "react-loading-indicators";
 
@@ -20,12 +20,13 @@ const item = {
 
 const CompaniesSection = () => {
   const { data } = useContext(CompaniesContext);
+
   const navigate = useNavigate();
- 
+
   const handleNavigateIntoDetailsPage = (company) => {
     navigate(`/companies/details/${company?.name}/${company?.id}`);
   };
-
+ 
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
@@ -60,16 +61,28 @@ const CompaniesSection = () => {
               variants={item}
               className="bg-white rounded-xl p-6 shadow-md flex flex-col items-center text-center hover:shadow-lg transition-all duration-300"
             >
-              <Link>
-                <div className="w-24 h-24 object-cover mb-4 flex items-center justify-center bg-gray-200 rounded-full">
+              {/* <Link>
+
+                <div className=" object-cover mb-4 flex items-center justify-center bg-gray-200 ">
                   <img
                     src={`${company?.logo}`}
                     alt={company?.name}
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{company.name}</h3>
+               
+              </Link> */}
+              <Link>
+              <div className="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 ">
+                    <img
+                      src={company.logo}
+                      alt={`${company.name} logo`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">{company.name}</h3>
               </Link>
+
             </motion.div>
           ))}
         </motion.div>
