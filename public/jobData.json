@@ -225,18 +225,19 @@
     {
         "id": "5",
         "name": "Netflix",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg",
+        "logo": "https://i.ibb.co.com/sprKHc3q/images-q-tbn-ANd9-Gc-SFf8io-ELan4y-Zyq-WVp-DWOck-W2-Iz-HD8-Cfwg-s.jpg",
         "location": "Los Gatos, CA",
-        "website": "https://about.netflix.com/",
+        "website": "https://netflix.com/",
         "industry": "Entertainment",
         "description": "Netflix is the world's leading streaming entertainment service with over 270 million paid memberships in over 190 countries enjoying TV series, films and games across a wide variety of genres and languages.",
         "jobs": [
             {
                 "id": "job-005",
                 "title": "Software Developer",
-                "bannerImage": "https://jobs.netflix.com/assets/img/homepage/hero-b.jpg",
+                "bannerImage": "https://i.ibb.co.com/LdCpFkWW/25001216-7040859.jpg",
                 "location": "Los Gatos, CA",
                 "salary": "$120,000 - $150,000",
+                "website": "https://about.netflix.com/",
                 "jobType": "Full-time",
                 "description": "Develop and maintain Netflix's streaming platform and services.",
                 "requirements": [
@@ -248,9 +249,10 @@
             {
                 "id": "job-029",
                 "title": "Content Analyst",
-                "bannerImage": "https://jobs.netflix.com/assets/img/homepage/hero-b.jpg",
+                "bannerImage": "https://i.ibb.co.com/jkN1ZP69/1981-digital-o-Me-Fj-Zn-HGU-unsplash.jpg",
                 "location": "Los Angeles, CA",
                 "salary": "$75,000 - $95,000",
+                "website": "https://about.netflix.com/",
                 "jobType": "Full-time",
                 "description": "Analyze content performance data to inform content strategy and acquisition.",
                 "requirements": [
@@ -262,9 +264,10 @@
             {
                 "id": "job-030",
                 "title": "UI Engineer",
-                "bannerImage": "https://jobs.netflix.com/assets/img/homepage/hero-b.jpg",
+                "bannerImage": "https://i.ibb.co.com/PvfcWqYf/christina-wocintechchat-com-hto8qz1qv-Xk-unsplash.jpg",
                 "location": "Los Gatos, CA",
                 "salary": "$110,000 - $140,000",
+                "website": "https://about.netflix.com/",
                 "jobType": "Full-time",
                 "description": "Build and maintain user interfaces for Netflix applications across various devices.",
                 "requirements": [
@@ -278,7 +281,7 @@
     {
         "id": "6",
         "name": "Adobe",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Adobe_logo_2021.svg/800px-Adobe_logo_2021.svg.png",
+        "logo": "https://i.ibb.co.com/nqZQNcW5/images-q-tbn-ANd9-Gc-S5b-ng-MI4-Em3l-Sv0-NXRVYBr-Kmuh-Y9-LXx-F5-KQ-s.jpg",
         "location": "San Jose, CA",
         "website": "https://www.adobe.com/",
         "industry": "Software Development",
@@ -287,9 +290,10 @@
             {
                 "id": "job-006",
                 "title": "Front-end Developer",
-                "bannerImage": "https://www.adobe.com/content/dam/web/en/careers/creativecloud-hero-2000x667.jpg",
+                "bannerImage": "https://i.ibb.co.com/hRx8y9j2/nubelson-fernandes-Uc-YBL5-V0x-WQ-unsplash.jpg",
                 "location": "San Jose, CA",
                 "salary": "$100,000 - $130,000",
+                "website": "https://www.adobe.com/",
                 "jobType": "Full-time",
                 "description": "Build engaging user interfaces for Adobe products.",
                 "requirements": [
@@ -301,9 +305,10 @@
             {
                 "id": "job-031",
                 "title": "Creative Cloud Specialist",
-                "bannerImage": "https://www.adobe.com/content/dam/web/en/careers/creativecloud-hero-2000x667.jpg",
+                "bannerImage": "https://i.ibb.co.com/5gdrXXWq/Edoxi-Blog-Image-735-X335-October-4.webp",
                 "location": "San Francisco, CA",
                 "salary": "$80,000 - $100,000",
+                "website": "https://www.adobe.com/",
                 "jobType": "Full-time",
                 "description": "Provide technical support and training for Adobe Creative Cloud products.",
                 "requirements": [
@@ -315,9 +320,10 @@
             {
                 "id": "job-032",
                 "title": "Back-end Engineer",
-                "bannerImage": "https://www.adobe.com/content/dam/web/en/careers/creativecloud-hero-2000x667.jpg",
+                "bannerImage": "https://i.ibb.co.com/hRx8y9j2/nubelson-fernandes-Uc-YBL5-V0x-WQ-unsplash.jpg",
                 "location": "San Jose, CA",
                 "salary": "$115,000 - $145,000",
+                "website": "https://www.adobe.com/",
                 "jobType": "Full-time",
                 "description": "Develop and maintain server-side logic and databases for Adobe applications.",
                 "requirements": [
@@ -331,7 +337,7 @@
     {
         "id": "7",
         "name": "Salesforce",
-        "logo": "https://www.salesforce.com/content/dam/web/en_us/www/images/logo/salesforce-logo.svg",
+        "logo": "https://i.ibb.co.com/21YpCj7D/images-q-tbn-ANd9-Gc-RLZPT1-OHTYV-0n7eped-VCLmr-O5ahw-Kj-Lf-Qmg-s.png",
         "location": "San Francisco, CA",
         "website": "https://www.salesforce.com/",
         "industry": "Cloud Computing",
@@ -340,9 +346,10 @@
             {
                 "id": "job-007",
                 "title": "Cloud Engineer",
-                "bannerImage": "https://www.salesforce.com/content/dam/web/en_us/www/images/careers/hero/careers-hero-cloud-engineer.jpg",
+                "bannerImage": "https://i.ibb.co.com/5gdrXXWq/Edoxi-Blog-Image-735-X335-October-4.webp",
                 "location": "San Francisco, CA",
                 "salary": "$115,000 - $145,000",
+                "website": "https://www.salesforce.com/",
                 "jobType": "Full-time",
                 "description": "Design and implement cloud infrastructure for Salesforce applications.",
                 "requirements": [
@@ -354,9 +361,10 @@
             {
                 "id": "job-033",
                 "title": "Salesforce Developer",
-                "bannerImage": "https://www.salesforce.com/content/dam/web/en_us/www/images/careers/hero/careers-hero-salesforce-developer.jpg",
+                "bannerImage": "https://i.ibb.co.com/h1nYtqY2/images-q-tbn-ANd9-Gc-Tqy-YYj-ARWzmz2-p-Np9c-Y3-Wvco-Z9-Xhy-Otq-YJw-s.jpg",
                 "location": "San Francisco, CA",
                 "salary": "$100,000 - $130,000",
+                "website": "https://www.salesforce.com/",
                 "jobType": "Full-time",
                 "description": "Develop custom solutions on the Salesforce platform using Apex and Lightning.",
                 "requirements": [
@@ -364,27 +372,13 @@
                     "Salesforce certifications preferred",
                     "Strong understanding of Salesforce data model"
                 ]
-            },
-            {
-                "id": "job-034",
-                "title": "Technical Architect",
-                "bannerImage": "https://www.salesforce.com/content/dam/web/en_us/www/images/careers/hero/careers-hero-technical-architect.jpg",
-                "location": "San Francisco, CA",
-                "salary": "$150,000 - $190,000",
-                "jobType": "Full-time",
-                "description": "Design and lead the implementation of complex Salesforce solutions for enterprise clients.",
-                "requirements": [
-                    "Extensive experience with Salesforce architecture and design",
-                    "Strong leadership and client management skills",
-                    "Multiple Salesforce certifications"
-                ]
             }
         ]
     },
     {
         "id": "8",
         "name": "IBM",
-        "logo": "https://www.ibm.com/design/language/v1.0/images/ibm-logo.svg",
+        "logo": "https://i.ibb.co.com/WNCcTmMw/png-transparent-ibm-logo-management-business-innovation-ibm-blue-angle-company-thumbnail.png",
         "location": "Armonk, NY",
         "website": "https://www.ibm.com/",
         "industry": "Technology",
@@ -393,9 +387,10 @@
             {
                 "id": "job-008",
                 "title": "DevOps Engineer",
-                "bannerImage": "https://www.ibm.com/careers/static/89e3976099293519827150861491097c/img/hero.jpg",
+                "bannerImage": "https://i.ibb.co.com/39V6bTzx/1674376498502-e-2147483647-v-beta-t-om3tg7-UHG3yn-RW1hf-ISCv-H-K1-YPmaz99c-HPvo-L-j2mc.png",
                 "location": "Armonk, NY",
                 "salary": "$110,000 - $140,000",
+                "website": "https://www.ibm.com/",
                 "jobType": "Full-time",
                 "description": "Manage and automate infrastructure for IBM's cloud services.",
                 "requirements": [
@@ -407,9 +402,10 @@
             {
                 "id": "job-035",
                 "title": "Data Scientist",
-                "bannerImage": "https://www.ibm.com/careers/static/89e3976099293519827150861491097c/img/hero.jpg",
+                "bannerImage": "https://i.ibb.co.com/tw5PMvCK/7140739-3515462.jpg",
                 "location": "Cambridge, MA",
                 "salary": "$120,000 - $150,000",
+                "website": "https://www.ibm.com/",
                 "jobType": "Full-time",
                 "description": "Apply statistical and machine learning techniques to analyze and interpret complex datasets.",
                 "requirements": [
@@ -424,6 +420,7 @@
                 "bannerImage": "https://www.ibm.com/careers/static/89e3976099293519827150861491097c/img/hero.jpg",
                 "location": "Raleigh, NC",
                 "salary": "$90,000 - $120,000",
+                "website": "https://www.ibm.com/",
                 "jobType": "Full-time",
                 "description": "Monitor and analyze security events to detect and respond to cyber threats.",
                 "requirements": [
@@ -437,7 +434,7 @@
     {
         "id": "9",
         "name": "Apple",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+        "logo": "https://i.ibb.co.com/xKHdfz3T/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png",
         "location": "Cupertino, CA",
         "website": "https://www.apple.com/",
         "industry": "Consumer Electronics",
@@ -449,6 +446,7 @@
                 "bannerImage": "https://jobs.apple.com/content/dam/jobs/us/en-us/homepage/hero/desktop/hero-desktop.jpg",
                 "location": "Cupertino, CA",
                 "salary": "$130,000 - $160,000",
+                "website": "https://www.apple.com/",
                 "jobType": "Full-time",
                 "description": "Develop mobile applications for iOS and macOS platforms.",
                 "requirements": [
@@ -463,6 +461,7 @@
                 "bannerImage": "https://jobs.apple.com/content/dam/jobs/us/en-us/homepage/hero/desktop/hero-desktop.jpg",
                 "location": "Cupertino, CA",
                 "salary": "$140,000 - $170,000",
+                "website": "https://www.apple.com/",
                 "jobType": "Full-time",
                 "description": "Design and test hardware components for Apple products.",
                 "requirements": [
@@ -478,6 +477,7 @@
                 "location": "Sunnyvale, CA",
                 "salary": "$110,000 - $140,000",
                 "jobType": "Full-time",
+                "website": "https://www.apple.com/",
                 "description": "Design intuitive and visually appealing user interfaces for Apple's software and hardware products.",
                 "requirements": [
                     "Strong portfolio showcasing UI/UX design skills",
@@ -490,7 +490,7 @@
     {
         "id": "10",
         "name": "Spotify",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg",
+        "logo": "https://i.ibb.co.com/j9Yt2dHz/png-clipart-spotify-for-os-x-el-capitan-spotify-logo-thumbnail.png",
         "location": "Stockholm, Sweden",
         "website": "https://www.spotify.com/",
         "industry": "Entertainment",
@@ -502,6 +502,7 @@
                 "bannerImage": "https://content.scdn.co/i/_global/open-graph-default.png",
                 "location": "Stockholm, Sweden",
                 "salary": "$110,000 - $140,000",
+                "website": "https://www.spotify.com/",
                 "jobType": "Full-time",
                 "description": "Build backend services for Spotify's music streaming platform.",
                 "requirements": [
@@ -516,6 +517,7 @@
                 "bannerImage": "https://content.scdn.co/i/_global/open-graph-default.png",
                 "location": "Stockholm, Sweden",
                 "salary": "$120,000 - $150,000",
+                "website": "https://www.spotify.com/",
                 "jobType": "Full-time",
                 "description": "Design and build scalable data pipelines to support Spotify's analytics and machine learning efforts.",
                 "requirements": [
@@ -530,6 +532,7 @@
                 "bannerImage": "https://content.scdn.co/i/_global/open-graph-default.png",
                 "location": "London, UK",
                 "salary": "$95,000 - $125,000",
+                "website": "https://www.spotify.com/",
                 "jobType": "Full-time",
                 "description": "Define and drive the product strategy and roadmap for key features within the Spotify ecosystem.",
                 "requirements": [
@@ -543,7 +546,7 @@
     {
         "id": "11",
         "name": "X",
-        "logo": "https://abs.twimg.com/favicons/favicon.ico",
+        "logo": "https://i.ibb.co.com/d0Y7fgnf/png-transparent-twitter-x-logo-thumbnail.png",
         "location": "San Francisco, CA",
         "website": "https://x.com/",
         "industry": "Social Media",
@@ -555,6 +558,7 @@
                 "bannerImage": "https://pbs.twimg.com/semantic_core_img/1687735804974934017/y7966eGh?format=jpg&name=4096x4096",
                 "location": "San Francisco, CA",
                 "salary": "$130,000 - $160,000",
+                "website": "https://x.com/",
                 "jobType": "Full-time",
                 "description": "Develop features for X’s platform and services.",
                 "requirements": [
@@ -569,6 +573,7 @@
                 "bannerImage": "https://pbs.twimg.com/semantic_core_img/1687735804974934017/y7966eGh?format=jpg&name=4096x4096",
                 "location": "Boulder, CO",
                 "salary": "$140,000 - $175,000",
+                "website": "https://x.com/",
                 "jobType": "Full-time",
                 "description": "Build and deploy machine learning models to improve user experience and content recommendation.",
                 "requirements": [
@@ -583,6 +588,7 @@
                 "bannerImage": "https://pbs.twimg.com/semantic_core_img/1687735804974934017/y7966eGh?format=jpg&name=4096x4096",
                 "location": "New York, NY",
                 "salary": "$125,000 - $155,000",
+                "website": "https://x.com/",
                 "jobType": "Full-time",
                 "description": "Ensure the reliability, scalability, and performance of X's infrastructure.",
                 "requirements": [
@@ -596,7 +602,7 @@
     {
         "id": "12",
         "name": "Dropbox",
-        "logo": "https://cfl.dropboxstatic.com/static/images/favicon/favicon-dropbox.ico",
+        "logo": "https://i.ibb.co.com/mZYTJyZ/sm-5b321ca31dc13.jpg",
         "location": "San Francisco, CA",
         "website": "https://www.dropbox.com/",
         "industry": "Cloud Storage",
@@ -608,6 +614,7 @@
                 "bannerImage": "https://blog.dropbox.com/static/images/dropbox-logo-2021.png",
                 "location": "San Francisco, CA",
                 "salary": "$140,000 - $170,000",
+                "website": "https://www.dropbox.com/",
                 "jobType": "Full-time",
                 "description": "Design and deploy cloud architecture for Dropbox's storage services.",
                 "requirements": [
@@ -622,6 +629,7 @@
                 "bannerImage": "https://blog.dropbox.com/static/images/dropbox-logo-2021.png",
                 "location": "Seattle, WA",
                 "salary": "$120,000 - $150,000",
+                "website": "https://www.dropbox.com/",
                 "jobType": "Full-time",
                 "description": "Develop and maintain the backend systems that power Dropbox's file storage and sharing features.",
                 "requirements": [
@@ -636,6 +644,7 @@
                 "bannerImage": "https://blog.dropbox.com/static/images/dropbox-logo-2021.png",
                 "location": "Austin, TX",
                 "salary": "$115,000 - $145,000",
+                "website": "https://www.dropbox.com/",
                 "jobType": "Full-time",
                 "description": "Implement and maintain security measures to protect Dropbox's infrastructure and user data.",
                 "requirements": [
@@ -649,7 +658,7 @@
     {
         "id": "13",
         "name": "Pinterest",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Pinterest_logo_2023.svg",
+        "logo": "https://i.ibb.co.com/5gW8Kw99/pinterest-icon-10.png",
         "location": "San Francisco, CA",
         "website": "https://www.pinterest.com/",
         "industry": "Social Media",
@@ -661,6 +670,7 @@
                 "bannerImage": "https://about.pinterest.com/assets/img/life/hero.jpg",
                 "location": "San Francisco, CA",
                 "salary": "$120,000 - $150,000",
+                "website": "https://www.pinterest.com/",
                 "jobType": "Full-time",
                 "description": "Work on large-scale data systems to analyze Pinterest user data.",
                 "requirements": [
@@ -675,6 +685,7 @@
                 "bannerImage": "https://i.ibb.co.com/LdCpFkWW/25001216-7040859.jpg",
                 "location": "Mountain View, CA",
                 "salary": "$125,000 - $155,000",
+                "website": "https://www.pinterest.com/",
                 "jobType": "Full-time",
                 "description": "Develop and scale the backend infrastructure that powers Pinterest's features.",
                 "requirements": [
@@ -690,6 +701,7 @@
                 "location": "San Francisco, CA",
                 "salary": "$100,000 - $130,000",
                 "jobType": "Full-time",
+                "website": "https://www.pinterest.com/",
                 "description": "Design user-friendly and engaging experiences for Pinterest's web and mobile applications.",
                 "requirements": [
                     "Strong portfolio showcasing product design skills",
@@ -702,7 +714,7 @@
     {
         "id": "14",
         "name": "Slack",
-        "logo": "https://a.slack-edge.com/80588/marketing/img/logos/slack_logo_rgb.png",
+        "logo": "https://i.ibb.co.com/jvbwF8kV/images-q-tbn-ANd9-Gc-Saab27-Ik-YQ1-Tn-J41-Lto-DTb8-Df-SKnqq-Nv-Aw8g-s.jpg",
         "location": "San Francisco, CA",
         "website": "https://slack.com/",
         "industry": "Communication Tools",
@@ -714,6 +726,7 @@
                 "bannerImage": "https://slack.com/intl/en-gb/careers/img/homepage/hero/homepage-hero-desktop.jpg",
                 "location": "San Francisco, CA",
                 "salary": "$100,000 - $130,000",
+                "website": "https://slack.com/",
                 "jobType": "Full-time",
                 "description": "Build user-facing features for Slack’s messaging platform.",
                 "requirements": [
@@ -727,6 +740,7 @@
                 "title": "Backend Engineer",
                 "bannerImage": "https://slack.com/intl/en-gb/careers/img/homepage/hero/homepage-hero-desktop.jpg",
                 "location": "Vancouver, BC",
+                "website": "https://slack.com/",
                 "salary": "$115,000 - $145,000",
                 "jobType": "Full-time",
                 "description": "Develop and maintain the server-side logic and APIs for Slack's core features.",
@@ -741,6 +755,7 @@
                 "title": "Mobile Engineer (iOS/Android)",
                 "bannerImage": "https://slack.com/intl/en-gb/careers/img/homepage/hero/homepage-hero-desktop.jpg",
                 "location": "Dublin, Ireland",
+                "website": "https://slack.com/",
                 "salary": "$95,000 - $125,000",
                 "jobType": "Full-time",
                 "description": "Develop and maintain Slack's mobile applications for iOS and Android platforms.",
@@ -755,7 +770,7 @@
     {
         "id": "16",
         "name": "Zoom",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Zoom_icon.svg/2048px-Zoom_icon.svg.png",
+        "logo": "https://i.ibb.co.com/bghtf5sp/images-q-tbn-ANd9-Gc-RPGd-An-NGi5c-GYWf03-Ek-W6h-NSy-GSArz-Ih-V8r-Q-s.jpg",
         "location": "San Jose, CA",
         "website": "https://zoom.us/",
         "industry": "Communication",
@@ -767,6 +782,7 @@
                 "bannerImage": "https://explore.zoom.us/static/8c698c917193ef2186805989267f181b/img/careers/careers-hero.jpg",
                 "location": "San Jose, CA",
                 "salary": "$120,000 - $145,000",
+                "website": "https://zoom.us/",
                 "jobType": "Full-time",
                 "description": "Ensure reliability and scalability of Zoom’s video conferencing services.",
                 "requirements": [
@@ -781,6 +797,7 @@
                 "bannerImage": "https://explore.zoom.us/static/8c698c917193ef2186805989267f181b/img/careers/careers-hero.jpg",
                 "location": "Denver, CO",
                 "salary": "$110,000 - $140,000",
+                "website": "https://zoom.us/",
                 "jobType": "Full-time",
                 "description": "Develop and enhance Zoom's real-time audio and video communication features.",
                 "requirements": [
@@ -795,6 +812,7 @@
                 "bannerImage": "https://explore.zoom.us/static/8c698c917193ef2186805989267f181b/img/careers/careers-hero.jpg",
                 "location": "San Jose, CA",
                 "salary": "$115,000 - $145,000",
+                "website": "https://zoom.us/",
                 "jobType": "Full-time",
                 "description": "Implement and maintain security measures to protect Zoom's platform and user data.",
                 "requirements": [
@@ -808,7 +826,7 @@
     {
         "id": "17",
         "name": "Snapchat",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Snapchat_logo.svg/2048px-Snapchat_logo.svg.png",
+        "logo": "https://i.ibb.co.com/XfWSkhxd/images-q-tbn-ANd9-Gc-Qa-THh-SVhfo-SU-Y-m2cxp-Um-Uqk-YQ605zwhda-A-s.png",
         "location": "Los Angeles, CA",
         "website": "https://www.snapchat.com/",
         "industry": "Social Media",
@@ -820,6 +838,7 @@
                 "bannerImage": "https://snap-static.s3.amazonaws.com/www-assets/careers/hero/mobile-engineer.jpg",
                 "location": "Los Angeles, CA",
                 "salary": "$100,000 - $130,000",
+                "website": "https://www.snapchat.com/",
                 "jobType": "Full-time",
                 "description": "Develop and maintain Snapchat’s mobile application features.",
                 "requirements": [
@@ -834,6 +853,7 @@
                 "bannerImage": "https://snap-static.s3.amazonaws.com/www-assets/careers/hero/mobile-engineer.jpg",
                 "location": "Santa Monica, CA",
                 "salary": "$120,000 - $150,000",
+                "website": "https://www.snapchat.com/",
                 "jobType": "Full-time",
                 "description": "Develop and implement augmented reality features and lenses for the Snapchat platform.",
                 "requirements": [
@@ -848,6 +868,7 @@
                 "bannerImage": "https://snap-static.s3.amazonaws.com/www-assets/careers/hero/mobile-engineer.jpg",
                 "location": "Los Angeles, CA",
                 "salary": "$110,000 - $140,000",
+                "website": "https://www.snapchat.com/",
                 "jobType": "Full-time",
                 "description": "Build and scale the backend infrastructure that supports Snapchat's real-time features and data processing.",
                 "requirements": [
@@ -861,7 +882,7 @@
     {
         "id": "19",
         "name": "Airbnb",
-        "logo": "https://a0.muscache.com/airbnb/static/logotype_whitetext_sm-2a7031d52305ee66a70f8d1640f58864.svg",
+        "logo": "https://i.ibb.co.com/2VQvNHZ/png-transparent-airbnb-logo-coupon-privately-held-company-airbnb-logo-text-trademark-service-thumbna.png",
         "location": "San Francisco, CA",
         "website": "https://www.airbnb.com/",
         "industry": "Travel & Hospitality",
@@ -873,6 +894,7 @@
                 "bannerImage": "https://careers.airbnb.com/wp-content/uploads/sites/4/2023/08/Engineering-scaled.jpg",
                 "location": "San Francisco, CA",
                 "salary": "$110,000 - $140,000",
+                "website": "https://www.airbnb.com/",
                 "jobType": "Full-time",
                 "description": "Work on building scalable backend services for Airbnb’s platform.",
                 "requirements": [
@@ -887,6 +909,7 @@
                 "bannerImage": "https://careers.airbnb.com/wp-content/uploads/sites/4/2023/08/Engineering-scaled.jpg",
                 "location": "Dublin, Ireland",
                 "salary": "$95,000 - $125,000",
+                "website": "https://www.airbnb.com/",
                 "jobType": "Full-time",
                 "description": "Develop user-facing features for Airbnb's web and mobile applications.",
                 "requirements": [
@@ -901,6 +924,7 @@
                 "bannerImage": "https://careers.airbnb.com/wp-content/uploads/sites/4/2023/08/Engineering-scaled.jpg",
                 "location": "San Francisco, CA",
                 "salary": "$120,000 - $150,000",
+                "website": "https://www.airbnb.com/",
                 "jobType": "Full-time",
                 "description": "Analyze Airbnb's vast datasets to provide insights and drive product decisions.",
                 "requirements": [

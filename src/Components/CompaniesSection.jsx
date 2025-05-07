@@ -61,7 +61,7 @@ const CompaniesSection = () => {
               className="bg-white rounded-xl p-6 shadow-md flex flex-col items-center text-center hover:shadow-lg transition-all duration-300"
             >
               <Link>
-                <div className="w-24 h-24 mb-4 flex items-center justify-center bg-gray-200 rounded-full">
+                <div className="w-24 h-24 object-cover mb-4 flex items-center justify-center bg-gray-200 rounded-full">
                   <img
                     src={`${company?.logo}`}
                     alt={company?.name}

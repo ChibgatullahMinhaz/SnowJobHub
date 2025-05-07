@@ -78,7 +78,7 @@ const DetailsPage = () => {
           <p className="text-gray-700 mb-6">{company?.description}</p>
 
           <Link
-            href={company?.website}
+            to={company?.website}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center text-primary hover:text-primary-focus transition-colors"
