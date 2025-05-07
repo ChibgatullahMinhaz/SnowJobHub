@@ -18,8 +18,8 @@ const Jobs = () => {
     } catch (error) {
       toast.error(error.message);
     }
-  }, [data, setAllJobs]);
-
+  }, [data]);
+console.log( selectedJob);
   return (
     <>
       <Helmet>
@@ -51,7 +51,7 @@ const Jobs = () => {
         <JobDetailsModal
           job={selectedJob}
           onClose={() => setSelectedJob(null)}
-          url={`www.hsdfjs`}
+          url={selectedJob?.website}
         />
       </div>
     </>

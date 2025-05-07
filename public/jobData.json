@@ -11,7 +11,7 @@
             {
                 "id": "job-001",
                 "title": "Software Engineer",
-                "bannerImage": "https://careers.google.com/static/hero/hero-global.jpg",
+                "bannerImage": "https://i.ibb.co.com/LdCpFkWW/25001216-7040859.jpg",
                 "location": "Mountain View, CA",
                 "salary": "$120,000 - $150,000",
                 "jobType": "Full-time",
@@ -26,7 +26,7 @@
             {
                 "id": "job-021",
                 "title": "Research Scientist",
-                "bannerImage": "https://careers.google.com/static/hero/hero-global.jpg",
+                "bannerImage": "https://i.ibb.co.com/s9PQwPQk/science.png",
                 "location": "Mountain View, CA",
                 "salary": "$140,000 - $180,000",
                 "website": "https://about.google/",
@@ -41,7 +41,7 @@
             {
                 "id": "job-022",
                 "title": "Technical Program Manager",
-                "bannerImage": "https://careers.google.com/static/hero/hero-global.jpg",
+                "bannerImage": "https://i.ibb.co.com/svWD0JG6/11754548-4820271.jpg",
                 "location": "Sunnyvale, CA",
                 "salary": "$130,000 - $160,000",
                 "website": "https://about.google/",
@@ -58,7 +58,7 @@
     {
         "id": "2",
         "name": "Microsoft",
-        "logo": "/src/assets/logo/microsft.png",
+        "logo": "https://i.ibb.co.com/PvwkM050/2048px-Microsoft-logo-svg.png",
         "location": "Redmond, WA",
         "website": "https://www.microsoft.com/en-us/",
         "industry": "Technology",
@@ -67,7 +67,7 @@
             {
                 "id": "job-002",
                 "title": "Product Manager",
-                "bannerImage": "https://careers.microsoft.com/static/89e3976099293519827150861491097c/img/hero.jpg",
+                "bannerImage": "https://i.ibb.co.com/209TTpFy/72632240-9796291.jpg",
                 "location": "Redmond, WA",
                 "salary": "$100,000 - $130,000",
                 "website": "https://www.microsoft.com/en-us/",
@@ -82,7 +82,7 @@
             {
                 "id": "job-023",
                 "title": "Security Engineer",
-                "bannerImage": "https://careers.microsoft.com/static/89e3976099293519827150861491097c/img/hero.jpg",
+                "bannerImage": "https://i.ibb.co.com/jPL9JzLs/9174506-6333.jpg",
                 "location": "Bellevue, WA",
                 "salary": "$110,000 - $140,000",
                 "website": "https://www.microsoft.com/en-us/",
@@ -97,7 +97,7 @@
             {
                 "id": "job-024",
                 "title": "Data Analyst",
-                "bannerImage": "https://careers.microsoft.com/static/89e3976099293519827150861491097c/img/hero.jpg",
+                "bannerImage": "https://i.ibb.co.com/tw5PMvCK/7140739-3515462.jpg",
                 "location": "Redmond, WA",
                 "salary": "$80,000 - $100,000",
                 "website": "https://www.microsoft.com/en-us/",
@@ -123,8 +123,7 @@
             {
                 "id": "job-003",
                 "title": "UX Designer",
-                "bannerImage": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/wethinkbig/hero/v2/WETB_hero_UX_design_desktop_2x._CB635488941_.jpg",
-                "location": "Seattle, WA",
+                "bannerImage": "https://i.ibb.co.com/rfZh22bd/16683353-5757453.jpg",
                 "salary": "$90,000 - $120,000",
                 "website": "https://www.aboutamazon.com/",
                 "jobType": "Full-time",
@@ -138,7 +137,7 @@
             {
                 "id": "job-025",
                 "title": "Supply Chain Analyst",
-                "bannerImage": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/wethinkbig/hero/v2/WETB_hero_supply_chain_desktop_2x._CB635488941_.jpg",
+                "bannerImage": "https://i.ibb.co.com/7d78G0Wh/20548369-6264699.jpg",
                 "location": "Seattle, WA",
                 "salary": "$75,000 - $95,000",
                 "website": "https://www.aboutamazon.com/",
@@ -153,7 +152,7 @@
             {
                 "id": "job-026",
                 "title": "Business Analyst",
-                "bannerImage": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/wethinkbig/hero/v2/WETB_hero_business_analyst_desktop_2x._CB635488941_.jpg",
+                "bannerImage": "https://i.ibb.co.com/60gxJ5pB/12643932-5031659.jpg",
                 "location": "Austin, TX",
                 "salary": "$85,000 - $110,000",
                 "website": "https://www.aboutamazon.com/",
@@ -170,19 +169,20 @@
     {
         "id": "4",
         "name": "Meta",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/800px-2021_Facebook_icon.svg.png",
+        "logo": "https://i.ibb.co.com/gqXXRHF/800px-2021-Facebook-icon-svg.png",
         "location": "Menlo Park, CA",
-        "website": "https://about.facebook.com/",
+        "website": "https://www.facebook.com/",
         "industry": "Technology",
         "description": "Meta builds technologies that help people connect and share, build communities, and grow businesses.",
         "jobs": [
             {
                 "id": "job-004",
                 "title": "Data Scientist",
-                "bannerImage": "https://www.metacareers.com/static/images/careers/social/og_image.png",
+                "bannerImage": "https://i.ibb.co.com/tw5PMvCK/7140739-3515462.jpg",
                 "location": "Menlo Park, CA",
                 "salary": "$110,000 - $140,000",
                 "jobType": "Full-time",
+                "website": "https://www.facebook.com/",
                 "description": "Analyze data to generate actionable insights for improving Facebook products.",
                 "requirements": [
                     "Experience with SQL and Python",
@@ -193,10 +193,11 @@
             {
                 "id": "job-027",
                 "title": "AI Engineer",
-                "bannerImage": "https://www.metacareers.com/static/images/careers/social/og_image.png",
+                "bannerImage": "https://i.ibb.co.com/VWHL1mzp/144645511-10165944.jpg",
                 "location": "Menlo Park, CA",
                 "salary": "$135,000 - $170,000",
                 "jobType": "Full-time",
+                "website": "https://www.facebook.com/",
                 "description": "Develop and deploy AI solutions to enhance user experience and platform capabilities.",
                 "requirements": [
                     "Master's or PhD in Computer Science with AI focus",
@@ -207,10 +208,11 @@
             {
                 "id": "job-028",
                 "title": "Social Media Manager",
-                "bannerImage": "https://www.metacareers.com/static/images/careers/social/og_image.png",
+                "bannerImage": "https://i.ibb.co.com/fzMpQnFS/austin-distel-t-LZh-FRLj6n-Y-unsplash.jpg",
                 "location": "New York, NY",
                 "salary": "$70,000 - $90,000",
                 "jobType": "Full-time",
+                "website": "https://www.facebook.com/",
                 "description": "Manage Facebook's social media presence and engage with online communities.",
                 "requirements": [
                     "Proven experience in social media marketing",
@@ -670,7 +672,7 @@
             {
                 "id": "job-045",
                 "title": "Software Engineer (Backend)",
-                "bannerImage": "https://about.pinterest.com/assets/img/life/hero.jpg",
+                "bannerImage": "https://i.ibb.co.com/LdCpFkWW/25001216-7040859.jpg",
                 "location": "Mountain View, CA",
                 "salary": "$125,000 - $155,000",
                 "jobType": "Full-time",
