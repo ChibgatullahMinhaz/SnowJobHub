@@ -39,7 +39,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/companies/details/:name/:Id",
-        element: <DetailsPage></DetailsPage>,
+        element: <PrivetRoute><DetailsPage></DetailsPage></PrivetRoute> ,
       },
       {
         path: "/use/updateProfile",
