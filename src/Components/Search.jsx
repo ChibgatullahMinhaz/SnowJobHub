@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Search = ({ setQuery }) => {
   const handleSearch = (e) => {
@@ -7,7 +8,11 @@ const Search = ({ setQuery }) => {
     console.log(e.target);
   };
   return (
-    <div>
+    <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.9 }}
+    >
       <form onSubmit={handleSearch}>
         <label className="input">
           <svg
@@ -35,7 +40,7 @@ const Search = ({ setQuery }) => {
           <kbd className="kbd kbd-sm">⌘</kbd>
         </label>
       </form>
-    </div>
+    </motion.div>
   );
 };
 

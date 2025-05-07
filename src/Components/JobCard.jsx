@@ -7,7 +7,7 @@ import { ArrowRight, ArrowRightIcon } from "lucide-react";
 const JobCard = ({ job, onClick }) => {
   return (
     <motion.div
-      className="card shadow-md bg-base-100 transition-all cursor-pointer hover:shadow-xl"
+      className="card shadow-md bg-base-100 transition-all cursor-pointer hover:shadow-xl self-start"
      
       initial={{ opacity: 1, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
@@ -16,7 +16,7 @@ const JobCard = ({ job, onClick }) => {
       <div className="card-body">
       <div className="flex justify-between items-start mb-4">
         <div>
-          <h2 className="card-title">{job.title}</h2>
+          <h2 className="card-title line-clamp-1 ">{job.title}</h2>
           <p className="text-sm text-gray-500 mt-1">
             {job.location}{" "}
             {job.remote && (
@@ -24,7 +24,7 @@ const JobCard = ({ job, onClick }) => {
             )}
           </p>
         </div>
-        <span className="badge badge-info">{job.jobType}</span>
+        <span className="p-1 bg-blue-400 rounded-lg text-base-300">{job.jobType}</span>
       </div>
       <div>
         <p className="text-sm text-gray-500 mb-2">Salary range:</p>
