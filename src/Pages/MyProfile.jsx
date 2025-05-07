@@ -40,12 +40,12 @@ export default function MyProfile() {
   return (
 <>
 <Helmet>
-        <title>SnowJobHub - updateProfile My Profile</title>
+        <title>SnowJobHub -  My Profile</title>
         <meta name="description" content="This is SnowJobHub updateProfile My Profile" />
         <meta
           name="SnowJobHub"
           content="React, SnowJobHub
-, updateProfile My Profile"
+, My Profile"
         />
       </Helmet>
     <motion.div

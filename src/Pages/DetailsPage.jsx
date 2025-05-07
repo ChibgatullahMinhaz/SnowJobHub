@@ -42,7 +42,7 @@ const DetailsPage = () => {
 
     <div className="container mx-auto py-10 px-4 md:px-6">
         <Helmet>
-        <title>SnowJobHub || Company Details page</title>
+        <title>SnowJobHub || Company Details for {company?.name}</title>
         <meta name="description" content="This is SnowJobHub" />
         <meta
           name="snowjobhub"

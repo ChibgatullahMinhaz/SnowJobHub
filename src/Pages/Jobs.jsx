@@ -31,7 +31,7 @@ const Jobs = () => {
   return (
     <div className="flex justify-center flex-col">
       <Helmet>
-        <title>Jobs - SnowJobHub</title>
+        <title>SnowJobHub - Find Best job for yours. </title>
         <meta
           name="description"
           content="Learn more about SnowJobHub, the innovative job exploration platform"
