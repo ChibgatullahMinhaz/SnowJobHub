@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 
 const CompaniesProvider = ({ children }) => {
   const [data, setAllData] = useState([]);
-  const [isLoading, setIsLoading] = useState();
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {

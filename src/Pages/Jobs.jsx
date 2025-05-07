@@ -28,7 +28,6 @@ const Jobs = () => {
     }
   }, [data, query]);
 
-  console.log(query);
 
   return (
     <div className="flex justify-center flex-col">

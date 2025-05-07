@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import { Atom } from "react-loading-indicators";
 
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 const containerVariants = {
@@ -22,31 +22,7 @@ const cardVariants = {
 };
 
 const AllCompanies = () => {
-  const { data, isLoading, setIsLoading } = useContext(CompaniesContext);
-  const [companies, setCompanies] = useState([]);
-
-  useEffect(() => {
-
-    try {
-      setIsLoading(true);
-      setCompanies(data);
-    } catch (error) {
-      toast.error(error.message);
-    } finally {
-      setIsLoading(false);
-    }
-  }, [setIsLoading, data]);
-
-  if (isLoading) {
-    return (
-      <div className="flex justify-center items-center">
-        <Atom
-          color={["#00FFFF", "#B0E0E6", "#ADD8E6", "#FFFFFF"]}
-          size="large"
-        />
-      </div>
-    );
-  }
+  const { data  } = useContext(CompaniesContext);
 
   return (
     <>
@@ -90,7 +66,7 @@ const AllCompanies = () => {
           whileInView="show"
           viewport={{ once: false }}
         >
-          {companies.map((company) => (
+          {data.map((company) => (
             <motion.div
               key={company.id}
               className="card card-compact bg-base-100 shadow-md hover:shadow-lg transition-shadow"
